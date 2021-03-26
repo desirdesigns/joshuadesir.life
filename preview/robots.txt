@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: file:////home/joshuaddesir/Documents/Publii/sites/joshuadesirlife/preview/sitemap.xml
