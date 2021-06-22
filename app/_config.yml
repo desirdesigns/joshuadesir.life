@@ -4,3 +4,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 plugins:
   - jekyll-feed
+
+
+sass: 
+  sass_dir: styles 
