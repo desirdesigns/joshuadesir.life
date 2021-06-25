@@ -4,8 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Data
 - type: document
-  path: app/_data/portfolio.yaml
+  path: "./app/_data/portfolio.yaml"
   label: Portfolio
   match: "**/*"
 - type: jekyll-pages
