@@ -8,9 +8,6 @@ sections:
   path: app/_data/portfolio.yaml
   label: Portfolio
   match: "**/*"
-- type: jekyll-posts
-  label: Posts
-  create: all
 - type: jekyll-pages
   label: Pages
   create: all
