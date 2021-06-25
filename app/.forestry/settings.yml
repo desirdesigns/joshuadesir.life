@@ -4,10 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Config
 - type: document
   path: app/_data/projects.yaml
   label: please
-  match: "**/*"
 - type: directory
   path: app/_data
   label: Works
