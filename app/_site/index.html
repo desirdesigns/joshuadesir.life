@@ -10,26 +10,12 @@
   
 
 <head>
-  <title></title>
+  <title>Joshuadesir.life</title>
   <meta charset="utf-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, user-scalable=no"
   />
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
-  <link rel="stylesheet" href="assets/styles/main.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.6.1/dist/animxyz.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
-  />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
   <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png" />
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-touch-icon-57x57.png" />
@@ -40,17 +26,40 @@
 <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/icons/apple-touch-icon-144x144.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/apple-touch-icon-152x152.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon-180x180.png" />
+  
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.6.1/dist/animxyz.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+  />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+ 
 </head>
 
 
   <body class="is-preload">
+
+
+    
     <div id="wrapper">
+      
       
 
 <header id="header">
 
     <div class="logo">
-        <span class="icon fa-gem"></span>
+        <img height="164px" width="164px" src="/assets/images/icons/logo.png">
     </div>
 
     <div class="content">
@@ -64,11 +73,11 @@
         <ul>
         
             <li>
-                <a href="#Meta">Meta</a>
+                <a href="#meta">Meta</a>
             </li>
           
             <li>
-                <a href="#Works">Works</a>
+                <a href="#works">Works</a>
             </li>
           
             <li>
@@ -89,19 +98,140 @@
 </header>
 
 
-      <div id="main"> 
+      <div id="main">
+         
 
 
-</div>
 
-      <footer id="footer">
-    <p class="copyright">© Untitled. Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a>.</p>
+      </div>
+
+      
+
+<footer id="footer">
+    <p class="copyright">Joshuadesir.life (c) 2021</p>
 </footer>
     </div>
+    
+ <div id="bg">
+  <div id="tsparticles"></div>
+ </div>
 
-    <div class="tsparticles" id="bg"></div>
+     
 
-    <script src="assets/js/jquery.min.js"></script>
+<script>
+  export let tsParticlesConfig = {
+    background: {
+      color: {
+        value: "#000000",
+      },
+      image: "url('https://particles.js.org/images/background3.jpg')",
+      position: "50% 50%",
+      repeat: "no-repeat",
+      size: "cover",
+    },
+    backgroundMask: {
+      cover: {
+        color: {
+          value: {
+            r: 255,
+            g: 255,
+            b: 255,
+          },
+        },
+      },
+      enable: true,
+    },
+    fullScreen: {
+      enable: true,
+      zIndex: 1,
+    },
+    interactivity: {
+      events: {
+        onClick: {
+          enable: true,
+          mode: "push",
+        },
+        onHover: {
+          enable: true,
+          mode: "bubble",
+          parallax: {
+            force: 60,
+          },
+        },
+      },
+      modes: {
+        bubble: {
+          distance: 400,
+          duration: 2,
+          opacity: 1,
+          size: 100,
+        },
+        grab: {
+          distance: 400,
+        },
+      },
+    },
+    particles: {
+      color: {
+        value: "#ffffff",
+      },
+      links: {
+        color: {
+          value: "#ffffff",
+        },
+        distance: 150,
+        enable: true,
+      },
+      move: {
+        attract: {
+          rotate: {
+            x: 600,
+            y: 1200,
+          },
+        },
+        enable: true,
+        outModes: {
+          bottom: "out",
+          left: "out",
+          right: "out",
+          top: "out",
+        },
+      },
+      number: {
+        density: {
+          enable: true,
+        },
+        value: 80,
+      },
+      opacity: {
+        animation: {
+          speed: 1,
+          minimumValue: 0.1,
+        },
+      },
+      size: {
+        random: {
+          enable: true,
+        },
+        value: {
+          min: 1,
+          max: 30,
+        },
+        animation: {
+          speed: 40,
+          minimumValue: 0.1,
+        },
+      },
+    },
+  };
+
+  $("#tsparticles")
+  .particles()
+  .init(tsParticlesConfig);
+</script>
+
+
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>

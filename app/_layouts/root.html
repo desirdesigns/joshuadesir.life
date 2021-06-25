@@ -10,15 +10,23 @@
   {% include {{ head }} %}
 
   <body class="is-preload">
+
+
+    
     <div id="wrapper">
+      
       {% include {{ header }} %}
 
-      <div id="main">{% include {{ articles }} %}</div>
+      <div id="main">
+        {% include {{ articles }} %}
+      </div>
 
       {% include {{ footer }} %}
     </div>
-
-    <div class="tsparticles" id="bg"></div>
+    
+ <div id="bg">
+  <div id="tsparticles"></div>
+ </div>
 
     {% include {{ postscripts }} %}
   </body>

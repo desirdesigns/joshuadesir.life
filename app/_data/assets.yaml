@@ -1,3 +1,6 @@
-mainStylesheet: /assets/styles/main.css 
+stylesheets: 
+ main: /assets/styles/main.css 
 
 scripts: 
+ - id:  
+   source: https://cdn.jsdelivr.net/npm/tsparticles

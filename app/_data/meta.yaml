@@ -1,6 +1,7 @@
 title: Joshuadesir.life 
 description: >-  
-
+ Inform & Inspire.
+ 
 plugins: 
   - id: jekyll-menus
     repo: https://github.com/forestryio/jekyll-menus/
