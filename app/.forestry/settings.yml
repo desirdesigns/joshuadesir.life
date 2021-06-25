@@ -4,15 +4,32 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: heading
-  label: Meta
+- type: document
+  path: app/_data/menus.yml
+  label: Menus
+  match: "**/*"
 - type: heading
   label: Config
+- type: document
+  path: app/_data/header.yaml
+  label: Header
+  match: "**/*"
+- type: document
+  path: app/_data/meta.yaml
+  label: Meta
+  match: "**/*"
+- type: document
+  path: app/_data/footer.yaml
+  label: Footer
+  match: "**/*"
 - type: heading
   label: Data
 - type: document
   path: app/_data/assets.yaml
   label: Assets
+- type: document
+  path: app/_data/projects.yaml
+  label: Projects
   match: "**/*"
 - type: jekyll-pages
   label: Pages
