@@ -4,14 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: app/_data/menus.yml
-  label: Menus
 - type: heading
   label: Config
 - type: document
   path: app/_data/header.yaml
   label: Header
+- type: document
+  path: app/_data/menus.yml
+  label: Menus
 - type: document
   path: app/_data/meta.yaml
   label: Meta
