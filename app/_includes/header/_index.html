@@ -15,7 +15,7 @@
 
     <nav>
         <ul>
-        {% for link in params.navigation %}
+        {% for link in site.menus.navigation %}
             <li>
                 <a href="#{{ link.id }}">{{ link.id | capitalize }}</a>
             </li>

@@ -1,13 +1,25 @@
+{% assign icons = "head/icons.html" %}
+
 <head>
-    <title>{{ page.title }}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.6.1/dist/animxyz.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+  />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.6.1/dist/animxyz.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  {% include {{ icons }} %}
 </head>
