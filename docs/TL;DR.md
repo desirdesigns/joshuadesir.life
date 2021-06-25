@@ -1,1 +1,2 @@
-<h1>TL;DR</h1>
+<h2>TL;DR</h2>
+_**a portfolio & organization kit for a creative designer to inform & inspire with.**_

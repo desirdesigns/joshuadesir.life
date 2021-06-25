@@ -8,3 +8,5 @@ plugins:
 
 sass: 
   sass_dir: styles 
+
+exclude: ['styles']

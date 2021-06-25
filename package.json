@@ -1,13 +1,13 @@
 {
   "name": "joshuadesir.life",
-  "version": "0.0.27",
-  "description": "IN^3",
-  "main": "index.js",
+  "version": "4.3.4",
+  "description": "a portfolio & organization kit for a creative designer to inform & inspire with.",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "readme:hydrate": "npm run @appnest/readme generate",
+    "app:dev": "cd app && bundle update && bundle exec jekyll serve"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/jffrydsr/joshuadesir.life/issues"
   },
-  "homepage": "https://github.com/jffrydsr/joshuadesir.life#readme"
+  "homepage": "https://github.com/jffrydsr/joshuadesir.life#readme",
+  "dependencies": {
+    "@appnest/readme": "^1.2.7"
+  }
 }
