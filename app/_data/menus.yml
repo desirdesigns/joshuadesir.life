@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 navigation: 
  - id: meta
    name: Meta 
@@ -6,3 +7,19 @@ navigation:
  - id: Services 
  - id: Resources 
  - id: Banned.video 
+=======
+---
+navigation:
+- id: Resources
+  weight: 2
+  title: 
+- id: Services
+  weight: 5
+  title: 
+- id: Works
+  weight: 3
+  title: 
+- id: Meta
+  weight: 4
+  title: 
+>>>>>>> master

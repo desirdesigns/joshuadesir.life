@@ -1,0 +1,11 @@
+---
+label: Erati
+hide_body: true
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+    min: 1
+  label: Name
+  description: What is the Project called?
