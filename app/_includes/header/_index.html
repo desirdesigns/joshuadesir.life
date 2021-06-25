@@ -1,0 +1,26 @@
+{% assign params = site.data.header %}
+
+<header id="header">
+
+    <div class="logo">
+        <span class="icon fa-gem"></span>
+    </div>
+
+    <div class="content">
+        <div class="inner">
+            <h1>{{ params.header.title }}</h1>
+            <p>{{ params.header.description }}</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+        {% for link in params.navigation %}
+            <li>
+                <a href="#{{ link.id }}">{{ link.id | capitalize }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+    </nav>
+
+</header>

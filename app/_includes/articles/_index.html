@@ -1,0 +1,18 @@
+{% assign params = site.data.articles %} 
+
+{% for article in params %}
+<article id="{{ article.id }}">
+
+  <h2 class="major">{{ article.id }}</h2>
+  <span class="image main">
+      <img src="{{ article.image.source }}" alt="{{ article.image.alt }}" />
+  </span>
+
+ {% for block in params.content %}
+  <p>
+    {{ block }}
+ </p>
+ {% endfor %}
+
+</article>
+{% endfor %}
