@@ -6,7 +6,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "readme:hydrate": "npm run @appnest/readme generate",
+    "readme:generate": "npm run @appnest/readme generate",
     "app:dev": "cd app && bundle update && bundle exec jekyll serve"
   },
   "repository": {
