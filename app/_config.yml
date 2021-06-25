@@ -9,7 +9,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-feed
 
+  - jekyll-target-blank
+
 
 sass: 
  sass_dir: styles 
  style: compressed  
+
+
+exclude: [styles]

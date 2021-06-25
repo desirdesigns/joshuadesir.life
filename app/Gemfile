@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-menus"
   gem "jekyll-optional-front-matter"
   gem "jekyll-tagging"
+  gem "jekyll-target-blank"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
