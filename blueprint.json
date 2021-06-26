@@ -1,3 +1,15 @@
 {
-    "placeholder": ["(", ")"]
+  "package": "package.json",
+  "blueprint": "SCHEMA.md",
+  "input": "SCHEMA.md",
+  "output": "README.md",
+  "placeholder": [
+    "(",
+    ")"
+  ],
+  "documentationConfig": {
+    "markdown": {
+      "titleLevel": 2
+    }
   }
+}
