@@ -1,4 +1,4 @@
-<h2>Technologies</h2> 
+<h2>🧰Technologies</h2> 
 
 <details>
  <summary>Frontend</summary>
@@ -7,11 +7,11 @@
 --- 
 
 <details>
- <summary>Frontend</summary>
+ <summary>Backend</summary>
 </details>
 
 --- 
 
 <details>
- <summary>Frontend</summary>
+ <summary>DevOps</summary>
 </details>
