@@ -6,8 +6,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "readme:generate": "npx @appnest/readme generate",
-    "app:dev": "cd app && bundle update && bundle exec jekyll serve"
+    "readme:g": "npx @appnest/readme generate",
+    "app:g": "cd app && bundle update && bundle exec jekyll serve"
   },
   "repository": {
     "type": "git",

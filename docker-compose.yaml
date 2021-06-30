@@ -1,7 +1,7 @@
 version: '3'
 services:
   jekyll:
-      image: jekyll/jekyll:3.8
+      image: jekyll/jekyll:4.0
       environment:
         - JEKYLL_ENV=development
       command: bundle exec jekyll serve --watch --incremental --config _config-dev.yml --host 0.0.0.0
