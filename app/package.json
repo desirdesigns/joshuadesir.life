@@ -1,0 +1,12 @@
+{
+  "name": "joshuadesir.life--app",
+  "version": "11.11.11",
+  "description": "Solid State by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "main": "index.js",
+  "scripts": {
+    "app:dev": "bundle install && bundle update && bundle exec jekyll serve JEKYLL_ENV=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Desir",
+  "license": "MIT"
+}
