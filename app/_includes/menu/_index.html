@@ -1,13 +1,24 @@
+{% comment %} 
+ id: men
+ type: component
+{% endcomment %}
+
+{% assign params = site.menus.[{{ page.menu }}] %}
+
 <nav id="menu">
     <div class="inner">
-        <h2>Menu</h2>
+        <h2>{{ page.menu }}</h2>
+
         <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="generic.html">Generic</a></li>
-            <li><a href="elements.html">Elements</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li>
+
+            {% for link in params %}
+            <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+    
         </ul>
-        <a href="#" class="close">Close</a>
+
+        <a href="#" class="close">Disappear</a>
     </div>
 </nav>

@@ -1,0 +1,12 @@
+{% comment %} 
+ id: copyright 
+ type: partial
+{% endcomment %}
+
+{% assign params = site.data.copyright %}
+
+<ul class="copyright">
+ {% for data in params %}
+  <li>{{ data }}</li>
+ {% endfor %} 
+</ul>

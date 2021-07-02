@@ -1,5 +1,6 @@
 ---
-permalink: "/"
-layout: root
-
+layout: page
+menu: navigation
 ---
+
+

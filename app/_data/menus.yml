@@ -1,3 +1,5 @@
 navigation: 
-  - id: home
-    href: /
+
+ - identifier: Home
+   url: /
+   title: API Documentation

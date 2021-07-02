@@ -2,24 +2,11 @@
   export let tsParticlesConfig = {
     background: {
       color: {
-        value: "#000000",
+        value: "#0d47a1",
       },
-      image: "url('https://particles.js.org/images/background3.jpg')",
       position: "50% 50%",
       repeat: "no-repeat",
       size: "cover",
-    },
-    backgroundMask: {
-      cover: {
-        color: {
-          value: {
-            r: 255,
-            g: 255,
-            b: 255,
-          },
-        },
-      },
-      enable: true,
     },
     fullScreen: {
       enable: true,
@@ -28,23 +15,18 @@
     interactivity: {
       events: {
         onClick: {
-          enable: true,
           mode: "push",
         },
         onHover: {
-          enable: true,
-          mode: "bubble",
-          parallax: {
-            force: 60,
-          },
+          mode: "repulse",
         },
       },
       modes: {
         bubble: {
           distance: 400,
           duration: 2,
-          opacity: 1,
-          size: 100,
+          opacity: 0.8,
+          size: 40,
         },
         grab: {
           distance: 400,
@@ -60,7 +42,7 @@
           value: "#ffffff",
         },
         distance: 150,
-        enable: true,
+        opacity: 0.4,
       },
       move: {
         attract: {
@@ -71,41 +53,59 @@
         },
         enable: true,
         outModes: {
-          bottom: "out",
-          left: "out",
-          right: "out",
-          top: "out",
+          default: "destroy",
+          bottom: "destroy",
+          left: "destroy",
+          right: "destroy",
+          top: "destroy",
         },
+        speed: 5,
       },
       number: {
         density: {
           enable: true,
         },
-        value: 80,
+        value: 0,
       },
       opacity: {
         animation: {
-          speed: 1,
+          speed: 3,
           minimumValue: 0.1,
         },
       },
       size: {
-        random: {
-          enable: true,
-        },
         value: {
-          min: 1,
-          max: 30,
+          min: 0.1,
+          max: 20,
         },
         animation: {
-          speed: 40,
+          enable: true,
+          sync: true,
+          destroy: "max",
           minimumValue: 0.1,
+          startValue: "min",
         },
+      },
+    },
+    emitters: {
+      autoPlay: true,
+      life: {},
+      rate: {
+        quantity: 2,
+        delay: 0.1,
+      },
+      size: {
+        mode: "percent",
+        height: 0,
+        width: 100,
+      },
+      direction: "top",
+      position: {
+        x: 50,
+        y: 100,
       },
     },
   };
 
-  $("#tsparticles")
-  .particles()
-  .init(tsParticlesConfig);
+  $("#tsparticles").particles().init(tsParticlesConfig);
 </script>

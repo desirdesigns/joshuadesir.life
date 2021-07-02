@@ -1,29 +1,23 @@
 {% assign icons = "head/icons.html" %}
+{% assign prescripts = "head/prescripts.html" %} 
+{% assign webfonts = "head/webfonts.html" %} 
 
 <head>
   <title>{{ site.data.meta.title }}</title>
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, user-scalable=no"
-  />
+
   {% include {{ icons }} %}
-  
+
+  {% include {{ prescripts }} %}
+
+   {% include {{ webfonts }} %}
+
   <link rel="stylesheet" href="assets/styles/main.css" />
   <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.6.1/dist/animxyz.min.css"
-  />
+
   <link
     rel="stylesheet"
     href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
  
 </head>
