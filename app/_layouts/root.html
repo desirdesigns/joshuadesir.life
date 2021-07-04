@@ -1,29 +1,39 @@
+{% comment %}
+ id: root
+ type: Layout
+ version: 11.11.11
+{% endcomment %}
+
+
 {% assign head = "head/_index.html" %}
 {% assign postscripts = "postscripts/_index.html" %}
 {% assign header = "header/_index.html" %}
 {% assign menu = "menu/_index.html" %}
-{% assign footer = "footer/_index.html" %}
-{% assign banner = "banner/_index.html" %}
+
+{% assign WINDOW = "page-wrapper" %}
+{% assign LOADER = "is-preload" %}
 
 <!DOCTYPE html>
 <html>
+
   {% include {{ head }} %}
 
-  <body class="is-preload">
+  <body class="{{ LOADER }}">
 
-    <div id="page-wrapper">
+    <main id="{{ WINDOW }}">
 
     {% include {{ header }} %}
 
     {% include {{ menu }} %}
+
+    <div id="wrapper">
       
-    {% include {{ banner }} %}
-
-    {{ content }}
-
-    {% include {{ footer }} %}
+      {{ content }}
 
     </div>
+
+ 
+    </main>
 
     {% include {{ postscripts }} %}
   </body>

@@ -2,9 +2,18 @@
 layout: root
 ---
 
-<div id="wrapper">
+{% comment %}
+ id: page
+ type: Layout
+ version: 11.11.11
+{% endcomment %}
 
-  {{ content }}
+{% assign banner = "banner/_index.html" %}
+{% assign footer = "footer/_index.html" %}
+
+{% include {{ banner }} %}
+
+{{ content }}
 
   <section id="one" class="wrapper spotlight style1">
     <div class="inner">
@@ -111,5 +120,5 @@ layout: root
       </ul>
     </div>
   </section>
-</div>
 
+{% include {{ footer }} %}
