@@ -1,6 +1,27 @@
+{% comment %}
+ id: Header
+ type: Partial
+{% endcomment %}
+
+{% assign local_params = page.header %}
+{% assign global_params = site.data.header %}
+{% assign MENU_REF = "#menu" %} 
+
+{% if local_params %} 
+  {% assign params = local_params %} 
+ {% else %} 
+  {% assign params = global_params %}
+{% endif %} 
+
 <header id="header" class="alt">
-    <h1><a href="index.html">Joshuadesir.life</a></h1>
+    <h1>
+      <a href="{{ params.titleLink }}">{{ params.title }}</a>
+    </h1>
+
     <nav>
-      <a href="#menu">Menu</a>
+    {% for navLink in params.navigation %}
+      <a href="{{ navLink.href }}">{{ navLink.name }}</a>
+    {% endfor %}
+     <a href="{{ MENU_REF }}">{{ menuTitle }}</a>
     </nav>
   </header>

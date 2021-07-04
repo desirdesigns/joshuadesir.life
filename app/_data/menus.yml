@@ -1,5 +1,4 @@
 navigation: 
-
  - identifier: Home
    url: /
    title: API Documentation

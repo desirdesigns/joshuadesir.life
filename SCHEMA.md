@@ -3,5 +3,6 @@
 (load:docs/TL;DR.md)
 (load:docs/DESCRIPTION.md)
 (load:docs/TECHNOLOGIES.md)
+(load:docs/DEFINITIONS.md)
 (load:docs/ATTRIBUTIONS.md)
 (load:docs/LICENSE.md)

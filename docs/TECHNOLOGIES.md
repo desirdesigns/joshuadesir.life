@@ -1,13 +1,13 @@
 <h2>🧰Technologies</h2> 
 
 <details>
- <summary>Frontend</summary>
+ <summary><b>🖌️Frontend</summary>
 </details>
 
 --- 
 
 <details>
- <summary>Backend</summary>
+ <summary><b>⚙️Backend</b></summary>
 </details>
 
 --- 

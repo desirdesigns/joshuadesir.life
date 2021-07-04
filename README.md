@@ -3,19 +3,25 @@
 <h2>🔗TL;DR</h2>
 
 _**a portfolio & organization kit for a creative designer to inform & inspire with.**_
+
+--- 
+
 <h2>📃Description</h2>
 
 **a single page application portfolio website with Graphical CMS system, assets pipeline, & personal branding kits for several organization departments & services, for a creative entrepreneur & designer.**
+
+---  
+
 <h2>🧰Technologies</h2> 
 
 <details>
- <summary>Frontend</summary>
+ <summary><b>🖌️Frontend</summary>
 </details>
 
 --- 
 
 <details>
- <summary>Backend</summary>
+ <summary><b>⚙️Backend</b></summary>
 </details>
 
 --- 
@@ -23,6 +29,12 @@ _**a portfolio & organization kit for a creative designer to inform & inspire wi
 <details>
  <summary>DevOps</summary>
 </details>
+<h2>📙Definitions</h2>
+
+ * **CMS** => Content Management System 
+ * **Domain Name** => 
+<h2>Attributuions</h2>
+
 
 <h2>📃License</h2>
 

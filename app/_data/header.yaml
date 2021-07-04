@@ -1,5 +1,12 @@
-header: 
- logo: logo.png
- title: Josuadesir.life
- description: Inform + Inspire 
- 
+title: Josuadesir.life
+titleLink: /
+logo: logo.png
+description: Inform + Inspire 
+menuTitle: Portals
+navigation: 
+  - name: About
+    href: /about 
+  - name: License
+    href: /license
+  - name: Github
+    href: https://github.com/jffrydsr/joshuadesir.life
