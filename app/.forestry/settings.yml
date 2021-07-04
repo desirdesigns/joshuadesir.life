@@ -5,6 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
+  label: Globals
+- type: document
+  path: app/_data/header.yaml
+  label: Header
+  match: "**/*"
+- type: heading
   label: Data
 - type: jekyll-pages
   label: Pages
