@@ -1,9 +1,14 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Globals
+- type: document
+  path: app/_data/header.yaml
+  label: Header
 - type: heading
   label: Data
 - type: jekyll-pages
