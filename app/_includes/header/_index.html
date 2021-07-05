@@ -1,6 +1,7 @@
 {% comment %}
  id: Header
  type: Partial
+ version: 11.11.11
 {% endcomment %}
 
 {% assign local_params = page.header %}
@@ -22,6 +23,6 @@
     {% for navLink in params.navigation %}
       <a href="{{ navLink.href }}">{{ navLink.name }}</a>
     {% endfor %}
-     <a href="{{ MENU_REF }}">{{ menuTitle }}</a>
+     <a href="{{ MENU_REF }}">{{ params.menuTitle }}</a>
     </nav>
   </header>

@@ -1,12 +1,36 @@
-<section id="banner">
+{% comment %} 
+ id: Banner 
+ type: Partial 
+ version: 11.11.11 
+{% endcomment %}
+
+{% assign local_params = page.banner %} 
+{% assign global_params = site.data.banner %}
+ 
+{% if local_params %} 
+ {% assign params = local_params %}
+ {% else %} 
+{% assign params = global_params %}
+{% endif %}
+
+{% if params %}
+<section 
+ style="background: url('{{ params.backgroundImage }}');
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+       background-size: cover;" id="banner">
+       
     <div class="inner">
       <div class="logo">
        <span class="icon fa-gem"></span>
      </div>
 
-      <h2>Joshuadesir.life</h2>
+      <h2>{{ params.title }}</h2>
       <p>
-        Inform & Inspire
+        {{ params.description }}
       </p>
     </div>
   </section>
+  {% endif %}

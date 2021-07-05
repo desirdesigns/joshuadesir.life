@@ -1,12 +1,17 @@
-title: Josuadesir.life
+title: Joshuadesir.life
 titleLink: /
 logo: logo.png
-description: Inform + Inspire 
-menuTitle: Portals
+description: Inform + Infiltrate + Inspire 
+menuTitle: Menu
 navigation: 
-  - name: About
-    href: /about 
-  - name: License
-    href: /license
-  - name: Github
-    href: https://github.com/jffrydsr/joshuadesir.life
+  - name: Portfolio
+    href: /about/ 
+
+  - name: Services
+    href: /services/
+
+  - name: Communications
+    href: /communication/
+
+  - name: About 
+    href: /about/

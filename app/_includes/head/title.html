@@ -1,0 +1,22 @@
+{% comment %} 
+ id: Title 
+ type: partial 
+ version: 11.11.11 
+{% endcomment %}
+
+
+{% capture local_params %}
+{{ page.title }} | {{ site.data.meta.title }}
+{% endcapture %}
+
+{% capture global_params %}
+ {{ site.data.meta.title }}
+{% endcapture %}
+
+{% if local_params %}
+ {% assign params = local_params %}
+ {% else %}
+ {% assign params = global_params %} 
+{% endif %}
+
+<title>{{ params }}</title>

@@ -1,23 +1,26 @@
+{% comment %} 
+ id: head 
+ type: partial
+{% endcomment %}
+
 {% assign icons = "head/icons.html" %}
 {% assign prescripts = "head/prescripts.html" %} 
 {% assign webfonts = "head/webfonts.html" %} 
+{% assign title = "head/title.html" %}
+{% assign meta = "head/meta.html" %}
+
+{% assign stylesheet = "head/stylesheet.html" %}
 
 <head>
-  <title>{{ site.data.meta.title }}</title>
+  {% include {{ title }} %}
 
   {% include {{ icons }} %}
 
   {% include {{ prescripts }} %}
 
-   {% include {{ webfonts }} %}
+  {% include {{ webfonts }} %}
 
-  <link rel="stylesheet" href="assets/styles/main.css" />
-  <link
+  {% include {{ stylesheet }} %}
 
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
-  />
-
- 
+  {% include {{ meta }} %}
 </head>
