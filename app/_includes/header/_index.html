@@ -21,7 +21,7 @@
 
     <nav>
     {% for navLink in params.navigation %}
-      <a href="{{ navLink.href }}">{{ navLink.name }}</a>
+      <a class="hvr-bob" href="{{ navLink.href }}">{{ navLink.name }}</a>
     {% endfor %}
      <a href="{{ MENU_REF }}">{{ params.menuTitle }}</a>
     </nav>
