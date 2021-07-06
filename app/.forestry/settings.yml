@@ -7,12 +7,27 @@ sections:
 - type: heading
   label: Globals
 - type: document
+  path: app/_data/meta.yaml
+  label: Meta
+  match: "**/*"
+- type: document
+  path: app/_data/copyright.yaml
+  label: Copyright
+  match: "**/*"
+- type: document
+  path: app/_data/assets.yaml
+  label: Assets
+  match: "**/*"
+- type: document
+  path: app/_data/projects.yaml
+  label: Projects
+  match: "**/*"
+- type: document
   path: app/_data/header.yaml
   label: Header
 - type: document
   path: app/_data/footer.yaml
   label: Footer
-  match: "**/*"
 - type: heading
   label: Content
 - type: jekyll-pages
