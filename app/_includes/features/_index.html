@@ -1,44 +1,41 @@
- 
-      <section class="features">
-        <article>
-          <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-          <h3 class="major">Sed feugiat lorem</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
-            dignissim dapibus ultrices.
-          </p>
-          <a href="#" class="special">Learn more</a>
-        </article>
+{% comment %}
+ id: features
+ type: partial 
+{% endcomment %}
 
-        <article>
-          <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-          <h3 class="major">Nisl placerat</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
-            dignissim dapibus ultrices.
-          </p>
-          <a href="#" class="special">Learn more</a>
-        </article>
-        <article>
-          <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-          <h3 class="major">Ante fermentum</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
-            dignissim dapibus ultrices.
-          </p>
-          <a href="#" class="special">Learn more</a>
-        </article>
-        <article>
-          <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-          <h3 class="major">Fusce consequat</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
-            dignissim dapibus ultrices.
-          </p>
-          <a href="#" class="special">Learn more</a>
-        </article>
-      </section>
-      <ul class="actions">
-        <li><a href="#" class="button">Browse All</a></li>
-      </ul>
-    </div>
+{% assign params = page.features %}
+
+
+{% if params %}
+<section class="hvr-{{ params.onHover }} features">
+
+  {% for feature in params.features %}
+  <article>
+    <a href="#" class="image">
+      <img src="{{ feature.image.source }}" alt="{{ feature.image.alt }}" />
+    </a>
+    <h3 class="major">{{ feature.title }}</h3>
+    <p>
+      {{ feature.description }}
+    </p>
+
+    {% for action in feature.actions %}
+    <a href="{{ action.href }}" class="special">{{ action.name }}</a>
+    {% endfor %}
+
+  </article>
+ {% endfor %} 
+
+</section>
+
+
+<ul class="actions">
+  {% for action in params.actions %}
+  <li>
+    <a href="{{ action.href }}" class="button">{{ action.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+</div>
+
+{% endif %}
