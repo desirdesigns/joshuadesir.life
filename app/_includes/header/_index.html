@@ -19,10 +19,12 @@
       <a href="{{ params.titleLink }}">{{ params.title }}</a>
     </h1>
 
-    <nav>
+    <nav class="xs-hide sm-hide"> 
     {% for navLink in params.navigation %}
-      <a class="hvr-bob" href="{{ navLink.href }}">{{ navLink.name }}</a>
+      <a class="hvr-{{ params.navLinksHover }} " href="{{ navLink.href }}">{{ navLink.name }}</a>
     {% endfor %}
      <a href="{{ MENU_REF }}">{{ params.menuTitle }}</a>
     </nav>
+
+
   </header>

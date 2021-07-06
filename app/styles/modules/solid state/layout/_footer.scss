@@ -23,7 +23,9 @@
 				margin: 0 _size(section-spacing, large) 0 0;
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
 			}
-
+            .socials {
+				@include vendor('display', 'flex');
+			}
 			.contact {
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
 			}

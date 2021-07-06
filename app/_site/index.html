@@ -108,18 +108,20 @@
       <a href="/">Joshuadesir.life</a>
     </h1>
 
-    <nav>
+    <nav class="xs-hide sm-hide"> 
     
-      <a class="hvr-bob" href="/portfolio/">Portfolio</a>
+      <a class="hvr- " href="/portfolio/">Portfolio</a>
     
-      <a class="hvr-bob" href="/services/">Services</a>
+      <a class="hvr- " href="/services/">Services</a>
     
-      <a class="hvr-bob" href="/communications/">Communications</a>
+      <a class="hvr- " href="/communications/">Communications</a>
     
-      <a class="hvr-bob" href="/about/">About</a>
+      <a class="hvr- " href="/about/">About</a>
     
      <a href="#menu">Menu</a>
     </nav>
+
+
   </header>
 
     
@@ -190,7 +192,7 @@
 
 <section id="footer">
     <div class="inner">
-
+     
   
 
 
@@ -217,6 +219,7 @@
   <li>© 2021, Joshuadesir.life</li>
   
 </ul>
+
     </div>
   </section>
 
@@ -225,11 +228,145 @@
  
     </main>
 
-    <script src="assets/scripts/jquery.min.js"></script>
+    
+ 
+ 
+
+<script src="assets/scripts/jquery.min.js"></script>
 <script src="assets/scripts/jquery.scrollex.min.js"></script>
 <script src="assets/scripts/browser.min.js"></script>
 <script src="assets/scripts/breakpoints.min.js"></script>
 <script src="assets/scripts/util.js"></script>
 <script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/headroom.min.js"></script>
+
+
+<script>
+  $("#header").headroom({
+    offset: 205,
+    tolerance: 5,
+    classes: {
+      initial: "animated",
+      pinned: "slideDown",
+      unpinned: "slideUp",
+    },
+  });
+
+  // to destroy
+  $("#header").headroom("destroy");
+</script>
+
+<script>
+  export let tsParticlesConfig = {
+    background: {
+      color: {
+        value: "#0d47a1",
+      },
+      position: "50% 50%",
+      repeat: "no-repeat",
+      size: "cover",
+    },
+    fullScreen: {
+      enable: true,
+      zIndex: 1,
+    },
+    interactivity: {
+      events: {
+        onClick: {
+          mode: "push",
+        },
+        onHover: {
+          mode: "repulse",
+        },
+      },
+      modes: {
+        bubble: {
+          distance: 400,
+          duration: 2,
+          opacity: 0.8,
+          size: 40,
+        },
+        grab: {
+          distance: 400,
+        },
+      },
+    },
+    particles: {
+      color: {
+        value: "#ffffff",
+      },
+      links: {
+        color: {
+          value: "#ffffff",
+        },
+        distance: 150,
+        opacity: 0.4,
+      },
+      move: {
+        attract: {
+          rotate: {
+            x: 600,
+            y: 1200,
+          },
+        },
+        enable: true,
+        outModes: {
+          default: "destroy",
+          bottom: "destroy",
+          left: "destroy",
+          right: "destroy",
+          top: "destroy",
+        },
+        speed: 5,
+      },
+      number: {
+        density: {
+          enable: true,
+        },
+        value: 0,
+      },
+      opacity: {
+        animation: {
+          speed: 3,
+          minimumValue: 0.1,
+        },
+      },
+      size: {
+        value: {
+          min: 0.1,
+          max: 20,
+        },
+        animation: {
+          enable: true,
+          sync: true,
+          destroy: "max",
+          minimumValue: 0.1,
+          startValue: "min",
+        },
+      },
+    },
+    emitters: {
+      autoPlay: true,
+      life: {},
+      rate: {
+        quantity: 2,
+        delay: 0.1,
+      },
+      size: {
+        mode: "percent",
+        height: 0,
+        width: 100,
+      },
+      direction: "top",
+      position: {
+        x: 50,
+        y: 100,
+      },
+    },
+  };
+
+  $("#tsparticles").particles().init(tsParticlesConfig);
+</script>
+
   </body>
 </html>
