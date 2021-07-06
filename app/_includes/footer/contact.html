@@ -1,19 +1,26 @@
-<form method="post" action="#">
+{% comment %} 
+ id: contact 
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign params = site.data.footer.contact %}
+
+{% if params %}
+<form method="post" action="{{ params.action }}">
     <div class="fields">
+      
+       {% for field in params.fields %}
       <div class="field">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <label for="{{ field.name }}">{{ field.name }}</label>
+        <input type="{{ field.type }}" name="{{ field.name }}" id="{{ field.id }}" />
       </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="4"></textarea>
-      </div>
-    </div>
+      {% endfor %}
+
     <ul class="actions">
-      <li><input type="submit" value="Send Message" /></li>
+      {% for action in params.actions %}
+      <li><input type="submit" value="{{ action.value }}" />{{ action.name }}</li>
+      {% endfor %}
     </ul>
   </form>
+  {% endif %}

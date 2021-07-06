@@ -5,13 +5,13 @@ description: Inform + Infiltrate + Inspire
 menuTitle: Menu
 navigation: 
   - name: Portfolio
-    href: /about/ 
+    href: /portfolio/ 
 
   - name: Services
     href: /services/
 
   - name: Communications
-    href: /communication/
+    href: /communications/
 
   - name: About 
     href: /about/
