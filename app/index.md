@@ -1,10 +1,13 @@
 ---
+title: Home
 layout: landing
 menu: navigation
-features:
- features: 
-  - title: Path to Redemption 
-    description: a LMMS beat to spit to.  
+
+articles:
+ articles:
+  - title: Why am I?
+  - title: What I do. 
+  - title: What I am. 
 ---
 
 

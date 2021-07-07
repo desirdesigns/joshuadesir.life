@@ -3,15 +3,3 @@ titleLink: /
 logo: logo.png
 description: Inform + Infiltrate + Inspire 
 menuTitle: Menu
-navigation: 
-  - name: Portfolio
-    href: /portfolio/ 
-
-  - name: Services
-    href: /services/
-
-  - name: Communications
-    href: /communications/
-
-  - name: About 
-    href: /about/

@@ -1,23 +1,20 @@
 {% comment %} 
  id: socials
- type: partials 
+ type: Element 
 {% endcomment %} 
 
-{% assign basePath__Icons = "/assets/images/icons/fontawesome/" %}
+{% assign basePath = "/assets/images/icons/fontawesome/" %}
 {% assign params = site.data.meta.socials %}
 
 <ul class="socials">
 
     {% for social in params.socials %}
-    <li>
-<<<<<<< HEAD
-        <a href="#">
-            <img src="/assets/images/fontawesome/brands/twitter.svg" height="64px" width="64px"/>
-=======
-        <a href="{{ social.href }}">
-            <img src="{{ basePath__Icons }}{{ social.collection }}/{{ social.icon }}.svg" height="{{ include.height }}" width="{{ include.width }}" />
->>>>>>> master
-        </a>
+    <li class="hvr-bob">
+        <button>
+            <img class="icon" src="{{ basePath }}{{ social.collection }}/{{ social.icon }}.svg" />
+
+        </button>
+        
     </li>
 
     {% endfor %}

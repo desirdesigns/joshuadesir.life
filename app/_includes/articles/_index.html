@@ -8,17 +8,22 @@
 
 {% for article in local_params.articles %}
 
-<section id="one" class="wrapper spotlight style1">
+<section id="two" class="wrapper spotlight style{{ forloop.index }}">
   <div class="inner">
-    <a href="#" class="image"><img src="{{ article.image.source }}" alt="" /></a>
+    
+    <a href="{{ article.url }}" class="image">
+      <img src="{{ article.image.source }}" alt="{{ article.image.alt }}" />
+    </a>
+
     <div class="content">
 
       <h2 class="major">{{ article.title }}</h2>
       <p>
       {{ article.description }}
       </p>
-
-      <a href="#" class="special">Learn more</a>
+     {% for action in article.actions %}
+      <a href="{{ action.href }}" class="special">{{ action.name }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>
