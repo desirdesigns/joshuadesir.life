@@ -1,42 +1,19 @@
-{% comment %}
- id: features
- type: partial 
-{% endcomment %}
-
-{% assign params = page.features %}
-
-
-{% if params %}
-
-<section class="hvr-{{ params.onHover }} features">
-
-  {% for feature in params.features %}
-  <article>
-    <a href="{{ feature.href }}" class="image">
-      <img src="{{ feature.image.source }}" alt="{{ feature.image.alt }}" />
-    </a>
-    <h3 class="major">{{ feature.title }}</h3>
-    <p>
-      {{ feature.description }}
-    </p>
-
-    {% for action in feature.actions %}
-    <a href="{{ action.href }}" class="special">{{ action.name }}</a>
-    {% endfor %}
-
-  </article>
- {% endfor %} 
-
+{% comment %} id: features type: partial {% endcomment %} {% assign params =
+page.features %} {% if params %}
+<section id="one" class="wrapper spotlight style1">
+  <div class="inner">
+    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+    <div class="content">
+      <h2 class="major">Magna arcu feugiat</h2>
+      <p>
+        Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis
+        ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id
+        tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices,
+        neque et faucibus viverra, ex nulla cursus.
+      </p>
+      <a href="#" class="special">Learn more</a>
+    </div>
+  </div>
 </section>
-
-
-<ul class="actions">
-  {% for action in params.actions %}
-  <li>
-    <a href="{{ action.href }}" class="button">{{ action.name }}</a>
-  </li>
-  {% endfor %}
-</ul>
-</div>
 
 {% endif %}

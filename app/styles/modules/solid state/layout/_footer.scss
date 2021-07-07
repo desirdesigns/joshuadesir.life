@@ -1,6 +1,4 @@
 #footer {
-  
- opacity: 0.8;
 
   .inner {
     @include padding(5em, 0);
@@ -16,27 +14,20 @@
       width: calc(50% - #{_size(section-spacing, large) * 0.5});
     }
 
-    #toe {
-      @include vendor("display", "flex");
-      @include vendor("flex-direction", "row");
-      padding: 30em;
-
-    }
-
     .socials {
       @include vendor("display", "flex");
       @include vendor("flex-direction", "row");
-
+      list-style: none;
       button {
         background-color: var(--blue-jeans); 
-        height: 2.7em;
-        width: 2.7em;
-        padding: 0.3em 0.3em 0.3em 0.3em;
+        height: 2.9em;
+        width: 2.9em;
+        padding: 0.4em 0.4em 0.4em 0.4em;
 
      
       }
 
-      list-style: none;
+     
     }
 
     .contact {
@@ -44,6 +35,7 @@
     }
 
     .copyright {
+      color: white;
       border-top: solid 2px _palette(border);
       list-style: none;
       margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;

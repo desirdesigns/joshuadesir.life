@@ -1,15 +1,19 @@
+{% comment %} 
+ id: postscripts
+ type: element
+ version: 11.11.11 
+{% endcomment %}
 
 {% assign headroomConfig = "postscripts/headroom.config.html" %} 
 {% assign tsParticlesConfig = "postscripts/tsparticles.config.html" %} 
 
-<script src="assets/scripts/jquery.min.js"></script>
-<script src="assets/scripts/jquery.scrollex.min.js"></script>
-<script src="assets/scripts/browser.min.js"></script>
-<script src="assets/scripts/breakpoints.min.js"></script>
-<script src="assets/scripts/util.js"></script>
-<script src="assets/scripts/main.js"></script>
-<script src="assets/scripts/headroom.min.js"></script>
+{% assign basePath = "/assets/scripts/" %}
+{% assign params = site.data.assets.scripts.postscripts %}
 
+
+{% for script in params %}
+ <script src="{{ basePath }}{{ script.path }}"></script>
+{% endfor %} 
 
 {% include {{ headroomConfig }} %}
 {% include {{ tsParticlesConfig }} %}
