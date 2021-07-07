@@ -2,3 +2,11 @@ navigation:
  - identifier: Home
    url: /
    title: API Documentation
+
+ - identifier: About
+   url: /
+   title: API Documentation
+
+ - identifier: Resume
+   url: /
+   title: API Documentation

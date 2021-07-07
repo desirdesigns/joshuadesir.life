@@ -1,30 +1,59 @@
-{% comment %}
- id: Articles
- type: Partial
- version: 11.11.11
-{% endcomment %}
-
-{% assign local_params = page.articles %} 
-
-{% for article in local_params.articles %}
-
-<section id="two" class="wrapper spotlight style{{ forloop.index }}">
-  <div class="inner">
-    
-    <a href="{{ article.url }}" class="image">
-      <img src="{{ article.image.source }}" alt="{{ article.image.alt }}" />
-    </a>
-
-    <div class="content">
-
-      <h2 class="major">{{ article.title }}</h2>
+{% comment %} id: Articles type: Partial version: 11.11.11 {% endcomment %} {%
+assign local_params = page.articles %} {% for article in local_params.articles
+%}
+<section id="wrapper">
+  <!-- Four -->
+  <section id="four" class="wrapper alt style1">
+    <div class="inner">
+      <h2 class="major">Vitae phasellus</h2>
       <p>
-      {{ article.description }}
+        Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
+        Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas,
+        purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed
+        ac elementum arcu. Quisque placerat auctor laoreet.
       </p>
-     {% for action in article.actions %}
-      <a href="{{ action.href }}" class="special">{{ action.name }}</a>
-      {% endfor %}
+      <section class="features">
+        <article>
+          <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+          <h3 class="major">Sed feugiat lorem</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+            dignissim dapibus ultrices.
+          </p>
+          <a href="#" class="special">Learn more</a>
+        </article>
+        <article>
+          <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+          <h3 class="major">Nisl placerat</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+            dignissim dapibus ultrices.
+          </p>
+          <a href="#" class="special">Learn more</a>
+        </article>
+        <article>
+          <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+          <h3 class="major">Ante fermentum</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+            dignissim dapibus ultrices.
+          </p>
+          <a href="#" class="special">Learn more</a>
+        </article>
+        <article>
+          <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+          <h3 class="major">Fusce consequat</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+            dignissim dapibus ultrices.
+          </p>
+          <a href="#" class="special">Learn more</a>
+        </article>
+      </section>
+      <ul class="actions">
+        <li><a href="#" class="button">Browse All</a></li>
+      </ul>
     </div>
-  </div>
+  </section>
 </section>
 {% endfor %}
