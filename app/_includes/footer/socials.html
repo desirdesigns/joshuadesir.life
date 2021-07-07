@@ -3,10 +3,22 @@
  type: partials 
 {% endcomment %} 
 
-<ul>
+{% assign basePath__Icons = "/assets/images/icons/fontawesome/" %}
+{% assign params = site.data.meta.socials %}
+
+<ul class="socials">
+
+    {% for social in params.socials %}
     <li>
+<<<<<<< HEAD
         <a href="#">
             <img src="/assets/images/fontawesome/brands/twitter.svg" height="64px" width="64px"/>
+=======
+        <a href="{{ social.href }}">
+            <img src="{{ basePath__Icons }}{{ social.collection }}/{{ social.icon }}.svg" height="{{ include.height }}" width="{{ include.width }}" />
+>>>>>>> master
         </a>
     </li>
+
+    {% endfor %}
 </ul>

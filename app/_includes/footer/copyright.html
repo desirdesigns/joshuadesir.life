@@ -4,9 +4,14 @@
 {% endcomment %}
 
 {% assign params = site.data.copyright %}
+{% assign socials = "footer/socials.html" %}
+
 
 <ul class="copyright">
  {% for data in params %}
   <li>{{ data }}</li>
  {% endfor %} 
 </ul>
+
+
+{% include {{ socials }} height="64px" width="64px" %}

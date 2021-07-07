@@ -2,6 +2,22 @@ title: Joshuadesir.life
 description: >-  
  Inform & Inspire.
  
+socials: 
+  onHover: bob
+  socials: 
+    - icon: twitter
+      href: https://twitter.com/joshuadesir
+      collection: brands 
+    - icon: facebook
+      href: https://twitter.com/joshuadesir
+      collection: brands 
+    - icon: twitter
+      href: https://twitter.com/joshuadesir
+      collection: brands 
+    - icon: twitter
+      href: https://twitter.com/joshuadesir
+      collection: brands 
+
 icons: [ "57x57", "72x72", "76X76", "114x114", "120x120", "144x144", "152x152", "168x168", "180x180" ]
 
 plugins: 

@@ -2,5 +2,6 @@ stylesheets:
  main: /assets/styles/main.css 
 
 scripts: 
- - id:  
-   source: https://cdn.jsdelivr.net/npm/tsparticles
+ postscripts: 
+  - path: jquery.min.js 
+  - path: headroom.min.js 

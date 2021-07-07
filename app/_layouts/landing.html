@@ -2,10 +2,20 @@
 layout: page 
 --- 
 
+<<<<<<< HEAD
 
 {% assign features = "features/_index.html" %} 
 
 {% include {{ features }} %}
 
+=======
+{% assign articles = "articles/_index.html" %}
+{% assign features = "features/_index.html" %} 
+
+
+{% include {{ articles }} %}
+{% include {{ features }} %} 
+  
+>>>>>>> master
 {{ content }} 
 

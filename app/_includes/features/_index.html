@@ -1,4 +1,5 @@
 {% comment %}
+<<<<<<< HEAD
  id: features
  type: partial 
 {% endcomment %}
@@ -39,3 +40,68 @@
 </div>
 
 {% endif %}
+=======
+ id: Features
+ type: Partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign local_params = page.features %} 
+
+<section class="wrapper">
+
+  <div class="inner">
+    <section class="features">
+  
+      {% for feature in local_params.features %} 
+      <article class="hvr-bob">
+        <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+        <h3 class="major">{{ feature.title }}</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+          dignissim dapibus ultrices.
+        </p>
+        <a href="#" class="special">Learn more</a>
+      </article>
+     {% endfor %}
+    
+      <article>
+        <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+        <h3 class="major">Nisl placerat</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+          dignissim dapibus ultrices.
+        </p>
+        <a href="#" class="special">Learn more</a>
+      </article>
+      <article>
+        <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+        <h3 class="major">Ante fermentum</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+          dignissim dapibus ultrices.
+        </p>
+        <a href="#" class="special">Learn more</a>
+      </article>
+      <article>
+        <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+        <h3 class="major">Fusce consequat</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla
+          dignissim dapibus ultrices.
+        </p>
+        <a href="#" class="special">Learn more</a>
+      </article>
+    </section>
+  
+    
+    <ul class="actions">
+      <li><a href="#" class="button">Browse All</a></li>
+    </ul>
+    </div>
+  
+  </div>
+  
+
+</section>
+>>>>>>> master
