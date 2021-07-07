@@ -1,11 +1,3 @@
-///
-/// Solid State by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
-/* Footer */
-
 	#footer {
 		.inner {
 			@include padding(5em, 0);
@@ -15,7 +7,7 @@
 			margin: 0 auto;
 			width: _size(inner);
 
-			> * {
+			>* {
 				width: 100%;
 			}
 
@@ -23,9 +15,32 @@
 				margin: 0 _size(section-spacing, large) 0 0;
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
 			}
-            .socials {
+
+			.socials {
+
 				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'row');
+
+				ul {
+					list-style: none;
+
+					li {
+
+						a {
+							outline: none;
+
+							img {
+								filter: hue-rotate(180deg);
+							}
+						}
+					}
+				}
+
+
+
+
 			}
+
 			.contact {
 				width: calc(50% - #{_size(section-spacing, large) * 0.5});
 			}
@@ -62,25 +77,25 @@
 
 		@include breakpoint('<=large') {
 
-			background-color:		_palette(bg);
+			background-color: _palette(bg);
 
-			background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
-									url('../../images/bg.jpg');
+			background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+				url('../../images/bg.jpg');
 
-			background-size:		auto,
-									cover;
+			background-size: auto,
+				cover;
 
-			background-position:	center,
-									center;
+			background-position: center,
+				center;
 
-		 	margin-top: (_size(wrapper-edges, large) * -1);
-		 	padding-top: _size(wrapper-edges, large);
+			margin-top: (_size(wrapper-edges, large) * -1);
+			padding-top: _size(wrapper-edges, large);
 
 		}
 
 		@include breakpoint('<=medium') {
-		 	margin-top: (_size(wrapper-edges, medium) * -1);
-		 	padding-top: _size(wrapper-edges, medium);
+			margin-top: (_size(wrapper-edges, medium) * -1);
+			padding-top: _size(wrapper-edges, medium);
 
 			.inner {
 				@include padding(3em, 3em);
@@ -104,8 +119,8 @@
 		}
 
 		@include breakpoint('<=small') {
-		 	margin-top: (_size(wrapper-edges, small) * -1);
-		 	padding-top: _size(wrapper-edges, small);
+			margin-top: (_size(wrapper-edges, small) * -1);
+			padding-top: _size(wrapper-edges, small);
 
 			.inner {
 				@include padding(2em, 2em);
