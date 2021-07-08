@@ -5,18 +5,27 @@ description: >-
 socials: 
   onHover: bob
   socials: 
+
     - icon: twitter
-      href: https://twitter.com/joshuadesir
       collection: brands 
+      href: https://twitter.com/joshuadesir
+
     - icon: facebook
       href: https://twitter.com/joshuadesir
       collection: brands 
+
     - icon: youtube
       href: https://twitter.com/joshuadesir
       collection: brands 
+
     - icon: linkedin
       href: https://twitter.com/joshuadesir
       collection: brands 
+
+    - icon: github
+      collection: brands 
+      href: https://github.com/joshuadesir
+
 
 icons: [ "57x57", "72x72", "76X76", "114x114", "120x120", "144x144", "152x152", "168x168", "180x180" ]
 

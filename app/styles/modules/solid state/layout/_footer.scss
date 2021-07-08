@@ -43,8 +43,9 @@
       width: 100%;
 
       li {
+        cursor: pointer;
         border-left: solid 2px _palette(border);
-        color: _palette(fg-light);
+        color: white;
         display: inline-block;
         font-size: 0.9em;
         line-height: 1;

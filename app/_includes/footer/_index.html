@@ -1,23 +1,23 @@
 {% comment %}
  id: footer
  type: partial
+ version: 11.11.11
 {% endcomment %} 
 
-{% assign copyright = "footer/copyright.html" %}
 {% assign contact = "footer/contact.html" %}
 {% assign header = "footer/header.html" %}
 {% assign toe = "footer/toe.html" %}
 
 <section id="footer">
-    <div class="inner">
+    
+  <div class="inner">
      
   {% include {{ header }} %}
       
   {% include {{ contact }} %}
 
- 
- 
     </div>
 
   {% include {{ toe }} %}
+
   </section>

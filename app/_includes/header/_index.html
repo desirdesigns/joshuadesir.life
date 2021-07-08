@@ -14,7 +14,7 @@
   {% assign params = global_params %}
 {% endif %} 
 
-<header id="header" class="alt">
+<header id="header" class="alt animated">
     <h1>
       <a href="{{ params.titleLink }}">{{ params.title }}</a>
     </h1>
@@ -23,7 +23,7 @@
     {% for navLink in params.navigation %}
       <a class="hvr-{{ params.onHover }} " href="{{ navLink.href }}">{{ navLink.name }}</a>
     {% endfor %}
-     <a href="{{ MENU_REF }}">{{ params.menuTitle }}</a>
+     <a href="{{ MENU_REF }}">{{ params.menuTitle }}<img src="/assets/images/icons/fontawesome/solid/bars.svg" height="30px" width="30px" /></a>
     </nav>
 
 
