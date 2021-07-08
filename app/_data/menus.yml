@@ -1,12 +1,12 @@
 navigation: 
- - identifier: Home
+ - id: Home
    url: /
    title: API Documentation
 
- - identifier: About
+ - id: About
    url: /
    title: API Documentation
 
- - identifier: Resume
-   url: /
+ - id: Resume
+   url: /resume/
    title: API Documentation

@@ -75,8 +75,6 @@ Home | Joshuadesir.life
 
 <script src="https://unpkg.com/@barba/core"></script>
 
-<!-- jsdelivr -->
-<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -198,7 +196,11 @@ Home | Joshuadesir.life
 
 
 
+
+
 <section id="footer">
+
+  <div id="tsparticles"></div>
     
   <div class="inner">
      
@@ -320,6 +322,9 @@ Home | Joshuadesir.life
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+
+
 
  <script src="/assets/scripts/jquery.min.js"></script>
 
@@ -329,15 +334,16 @@ Home | Joshuadesir.life
 
  <script src="/assets/scripts/breakpoints.min.js"></script>
 
- <script src="/assets/scripts/util.j"></script>
+ <script src="/assets/scripts/util.js"></script>
 
  <script src="/assets/scripts/main.js"></script>
 
  <script src="/assets/scripts/headroom.min.js"></script>
+
+ <script src="/assets/scripts/tsparticles.js"></script>
  
 
-<script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+
 
 <script>
   $("#header").headroom({
@@ -354,157 +360,7 @@ Home | Joshuadesir.life
   $("#header").headroom("destroy");
 </script>
 
-<script>
-  export let tsParticlesConfig = {
-    "background": {
-      "color": {
-        "value": "#000000"
-      }
-    },
-    "fullScreen": {
-      "enable": true
-    },
-    "particles": {
-      "color": {
-        "value": [
-          "#1E00FF",
-          "#FF0061",
-          "#E1FF00",
-          "#00FF9E"
-        ]
-      },
-      "move": {
-        "decay": 0.1,
-        "direction": "top",
-        "enable": true,
-        "gravity": {
-          "enable": true,
-          "maxSpeed": 200
-        },
-        "outModes": {
-          "default": "destroy",
-          "bottom": "destroy",
-          "left": "destroy",
-          "right": "destroy",
-          "top": "none"
-        },
-        "speed": {
-          "min": 50,
-          "max": 150
-        }
-      },
-      "number": {
-        "value": 0
-      },
-      "opacity": {
-        "animation": {
-          "speed": 0.3,
-          "sync": true,
-          "destroy": "min",
-          "startValue": "max"
-        }
-      },
-      "roll": {
-        "darken": {
-          "enable": true,
-          "value": 25
-        },
-        "enable": true,
-        "speed": {
-          "min": 15,
-          "max": 25
-        }
-      },
-      "rotate": {
-        "value": {
-          "min": 0,
-          "max": 360
-        },
-        "animation": {
-          "enable": true,
-          "speed": 60
-        },
-        "direction": "random"
-      },
-      "shape": {
-        "options": {
-          "polygon": [
-            {
-              "sides": 5
-            },
-            {
-              "sides": 6
-            }
-          ],
-          "character": [
-            {
-              "fill": true,
-              "font": "Verdana",
-              "value": [
-                "💩",
-                "🤡",
-                "🍀",
-                "🍙"
-              ],
-              "style": "",
-              "weight": 400
-            }
-          ]
-        },
-        "type": [
-          "circle",
-          "square",
-          "polygon",
-          "character",
-          "character",
-          "character"
-        ]
-      },
-      "size": {
-        "value": 5
-      },
-      "tilt": {
-        "value": {
-          "min": 0,
-          "max": 360
-        },
-        "animation": {
-          "enable": true,
-          "speed": 60
-        },
-        "direction": "random",
-        "enable": true
-      },
-      "wobble": {
-        "distance": 30,
-        "enable": true,
-        "speed": {
-          "min": -15,
-          "max": 15
-        }
-      }
-    },
-    "emitters": {
-      "autoPlay": true,
-      "life": {},
-      "rate": {
-        "quantity": 10,
-        "delay": 0.1
-      },
-      "size": {
-        "mode": "percent",
-        "height": 0,
-        "width": 0
-      },
-      "position": {
-        "x": 50,
-        "y": 100
-      }
-    }
-  };
 
-  $("#tsparticles").particles().init(tsParticlesConfig);
-</script>
     
   </body>
 </html>

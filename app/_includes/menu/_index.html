@@ -3,7 +3,7 @@
  type: component
 {% endcomment %}
 
-{% assign params = site.data.menus %}
+{% assign params = site.data.menus[{{ page.menu }}] %}
 
 <nav id="menu">
     <div class="inner">
@@ -11,9 +11,9 @@
 
         <ul class="links">
 
-            {% for link in params.navigation %}
+            {% for link in params %}
             <li>
-                <a href="{{ link.url }}">{{ link.identifier }}</a>
+                <a href="{{ link.href }}">{{ link.id }}</a>
             </li>
             {% endfor %}
     

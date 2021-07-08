@@ -2,11 +2,14 @@ stylesheets:
  main: /assets/styles/main.css 
 
 scripts: 
+ basePath: /assets/scripts/
  postscripts: 
   - path: jquery.min.js 
   - path: jquery.scrollex.min.js
   - path: browser.min.js
   - path: breakpoints.min.js
-  - path: util.j
+  - path: util.js
   - path: main.js
   - path: headroom.min.js 
+  - path: tsparticles.js
+  - path: vendor.js

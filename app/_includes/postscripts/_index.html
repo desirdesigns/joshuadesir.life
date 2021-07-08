@@ -4,10 +4,7 @@
  version: 11.11.11 
 {% endcomment %}
 
-{% assign headroomConfig = "postscripts/headroom.config.html" %} 
-{% assign tsParticlesConfig = "postscripts/tsparticles.config.html" %} 
-
-{% assign basePath = "/assets/scripts/" %}
+{% assign basePath = site.data.assets.scripts.basePath %}
 {% assign params = site.data.assets.scripts.postscripts %}
 
 
@@ -15,8 +12,3 @@
  <script src="{{ basePath }}{{ script.path }}"></script>
 {% endfor %} 
 
-<script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
-
-{% include {{ headroomConfig }} %}
-{% include {{ tsParticlesConfig }} %}
