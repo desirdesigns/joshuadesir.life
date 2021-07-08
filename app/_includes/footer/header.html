@@ -10,10 +10,10 @@
 {% assign params = site.data.footer.header %}
 
 
-{% if params %}
-<h2 class="major">{{ params.title }}</h2>
+
+<h2 class="major">{{ local_params.title }}</h2>
+
 <p>
-{{ params.description }} 
+{{ local_params.description }} 
 </p>
 
-{% endif %}

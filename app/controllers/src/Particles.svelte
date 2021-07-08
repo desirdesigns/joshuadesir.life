@@ -32,7 +32,7 @@
   
   <Particles
     id="tsparticles"
-    options="{particlesUrl}"
+    options="{particlesConfig}"
     on:particlesLoaded="{onParticlesLoaded}"
     on:particlesInit="{onParticlesInit}"
   />
