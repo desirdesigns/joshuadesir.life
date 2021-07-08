@@ -11,4 +11,5 @@ scripts:
   - path: headroom.min.js 
   - path: util.js
   - path: main.js
+  - path: vendor.js
 

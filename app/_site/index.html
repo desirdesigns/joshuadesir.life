@@ -98,7 +98,6 @@ Home | Joshuadesir.life
 
     <main id="page-wrapper">
       
-      <div id="tsparticles"></div>
     
 
     
@@ -122,7 +121,7 @@ Home | Joshuadesir.life
     
       <a class="hvr-sweep-to-top " href="#services">Services</a>
     
-     <a href="#menu"><img src="/assets/images/icons/fontawesome/solid/bars.svg" height="30px" width="30px" /></a>
+     <a href="#menu">🍔</a>
     </nav>
 
 
@@ -202,14 +201,14 @@ Home | Joshuadesir.life
 <section id="wrapper">
 
   
-  
-  <section class="wrapper spotlight  style1">
+
+  <section class="wrapper spotlight alt style1">
     <div class="inner">
       <a href="" class="image">
         <img src="" alt="" /></a>
       <div class="content">
 
-        <h2 class="major">Portrait 1</h2>
+        <h2 class="major">Why am I?</h2>
         <p>
           
         </p>
@@ -222,14 +221,14 @@ Home | Joshuadesir.life
     </div>
   </section>
 
-  
+
   <section class="wrapper spotlight  style2">
     <div class="inner">
       <a href="" class="image">
         <img src="" alt="" /></a>
       <div class="content">
 
-        <h2 class="major">Portrait 1</h2>
+        <h2 class="major">What I am.</h2>
         <p>
           
         </p>
@@ -242,14 +241,14 @@ Home | Joshuadesir.life
     </div>
   </section>
 
-  
-  <section class="wrapper spotlight  style3">
+
+  <section class="wrapper spotlight alt style3">
     <div class="inner">
       <a href="" class="image">
         <img src="" alt="" /></a>
       <div class="content">
 
-        <h2 class="major">Portrait 1</h2>
+        <h2 class="major">What I do.</h2>
         <p>
           
         </p>
@@ -262,14 +261,14 @@ Home | Joshuadesir.life
     </div>
   </section>
 
-  
+
   <section class="wrapper spotlight  style4">
     <div class="inner">
       <a href="" class="image">
         <img src="" alt="" /></a>
       <div class="content">
 
-        <h2 class="major">Portrait 1</h2>
+        <h2 class="major">Who I am.</h2>
         <p>
           
         </p>
@@ -331,32 +330,6 @@ Home | Joshuadesir.life
           </a>
 
           <h3 class="major">Joshuadesir.life</h3>
-          <p>
-            
-          </p>
-          <a href="#" class="special">Learn more</a>
-        </article>
-
-        
-        <article class="xyz-in hvr-grow-shadow">
-          <a href="#" class="image">
-            <img src="" alt="" />
-          </a>
-
-          <h3 class="major">ERATI</h3>
-          <p>
-            
-          </p>
-          <a href="#" class="special">Learn more</a>
-        </article>
-
-        
-        <article class="xyz-in hvr-grow-shadow">
-          <a href="#" class="image">
-            <img src="" alt="" />
-          </a>
-
-          <h3 class="major">ERATI</h3>
           <p>
             
           </p>
@@ -557,106 +530,8 @@ Home | Joshuadesir.life
 
  <script src="/assets/scripts/main.js"></script>
 
+ <script src="/assets/scripts/vendor.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
-
-<script>
-  $("#tsparticles")
-    .particles()
-    .init(
-      {
-        background: {
-          color: {
-            value: "#0d47a1",
-          },
-        },
-        fpsLimit: 60,
-        interactivity: {
-          detectsOn: "canvas",
-          events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
-            onHover: {
-              enable: true,
-              mode: "repulse",
-            },
-            resize: true,
-          },
-          modes: {
-            bubble: {
-              distance: 400,
-              duration: 2,
-              opacity: 0.8,
-              size: 40,
-            },
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: "#ffffff",
-          },
-          links: {
-            color: "#ffffff",
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
-          collisions: {
-            enable: true,
-          },
-          move: {
-            direction: "none",
-            enable: true,
-            outMode: "bounce",
-            random: false,
-            speed: 6,
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-            value: 80,
-          },
-          opacity: {
-            value: 0.5,
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            random: true,
-            value: 5,
-          },
-        },
-        detectRetina: true,
-      },
-      function (container) {
-        // container is the particles container where you can play/pause or stop/start.
-        // the container is already started, you don't need to start it manually.
-      }
-    );
-  // or
-
-  $("#tsparticles")
-    .particles()
-    .ajax("particles.json", function (container) {
-      // container is the particles container where you can play/pause or stop/start.
-      // the container is already started, you don't need to start it manually.
-    });
-</script>
 
     
   </body>

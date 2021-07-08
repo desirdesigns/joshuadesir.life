@@ -10,4 +10,4 @@ sass:
  style: compressed  
 
 
-exclude: [styles]
+exclude: [styles, controllers]

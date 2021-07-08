@@ -22,11 +22,11 @@
 
   <body class="{{ LOADER }}">
 
-    {% comment %}{% include {{ preloader }}  %}{% endcomment %}
+    {% comment %}{% include {{ preloader }}  %}  {% include {{ tsparticles }} %}
+    {% endcomment %}
 
     <main id="{{ WINDOW }}">
       
-      {% include {{ tsparticles }} %}
     
 
     {% include {{ header }} %}

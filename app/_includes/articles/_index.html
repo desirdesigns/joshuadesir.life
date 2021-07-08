@@ -15,8 +15,8 @@
 <section id="wrapper">
 
   {% for article in params.articles %}
-  {% if foorloop.index % 2 != 0 %}{% assign alt = "alt" %}{% endif %}
-  <section class="wrapper spotlight {{ alt }} style{{ forloop.index }}">
+
+  <section class="wrapper spotlight {{ article.class }} style{{ forloop.index }}">
     <div class="inner">
       <a href="{{ article.url }}" class="image">
         <img src="{{ article.image.source }}" alt="{{ article.image.alt }}" /></a>

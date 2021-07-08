@@ -2,39 +2,49 @@
 title: Home
 layout: landing
 articles:
- articles: 
-  - title: Portrait 1
+ articles:
+
+  - title:  Why am I?
+    class: alt
     actions: 
      - name: View
-  - title: Portrait 1
+
+  - title: What I am.
     actions: 
      - name: View
-  - title: Portrait 1
+
+  - title: What I do.
+    class: alt
     actions: 
      - name: View
-  - title: Portrait 1
+
+  - title: Who I am.
     actions: 
      - name: View
      
 header:
  title: Joshuadesir.life 
  titleLink: / 
+ menuTitle: ~
  onHover: sweep-to-top
  navigation: 
   - name: Intro 
     href: "#intro"
+
   - name: Communications
     href: "#communications"
+
   - name: Services
     href: "#services"
 
 features:
  features: 
   - title: ERATI
+  
   - title: Joshuadesir.life
+
   - title: ERATI
-  - title: ERATI
-  - title: ERATI
+
 
 menu:
  name: Directory
