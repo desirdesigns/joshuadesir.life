@@ -9,6 +9,8 @@
 {% assign postscripts = "postscripts/_index.html" %}
 {% assign header = "header/_index.html" %}
 {% assign menu = "menu/_index.html" %}
+{% assign preloader = "preloader/_index.html" %}
+{% assign tsparticles = "tsparticles/_index.html" %}
 
 {% assign WINDOW = "page-wrapper" %}
 {% assign LOADER = "is-preload" %}
@@ -20,7 +22,12 @@
 
   <body class="{{ LOADER }}">
 
+    {% comment %}{% include {{ preloader }}  %}{% endcomment %}
+
     <main id="{{ WINDOW }}">
+      
+      {% include {{ tsparticles }} %}
+    
 
     {% include {{ header }} %}
 

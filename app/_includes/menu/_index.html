@@ -3,17 +3,17 @@
  type: component
 {% endcomment %}
 
-{% assign params = site.data.menus[{{ page.menu }}] %}
+{% assign params = page.menu %}
 
 <nav id="menu">
     <div class="inner">
-        <h2>{{ page.menu }}</h2>
+        <h2>{{ params.name }}</h2>
 
         <ul class="links">
 
-            {% for link in params %}
-            <li>
-                <a href="{{ link.href }}">{{ link.id }}</a>
+            {% for link in params.links %}
+            <li class="hvr-{{ params.onHover }}">
+                <a href="{{ link.url }}">{{ link.id }}</a>
             </li>
             {% endfor %}
     

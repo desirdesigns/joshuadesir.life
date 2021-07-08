@@ -1,4 +1,5 @@
 #footer {
+  z-index: var(--footer-z-index);
 
   .inner {
     @include padding(5em, 0);

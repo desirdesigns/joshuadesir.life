@@ -6,8 +6,12 @@
 {% assign params = site.data.copyright %}
 
 <ul class="copyright">
- {% for data in params %}
-  <li class="hvr-underline-from-center">{{ data }}</li>
+ {% for line in params.lines %}
+  <li class="hvr-{{ params.onHover }}">
+      <a href="{{ line.url }}">
+       {{ line.text }}
+      </a>
+ </li>
  {% endfor %} 
 </ul>
 
