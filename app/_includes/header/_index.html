@@ -19,7 +19,7 @@
       <a href="{{ params.titleLink }}">{{ params.title }}</a>
     </h1>
 
-    <nav xyz="stagger-4 fade">
+    <nav class="flex" xyz="stagger-4 fade">
     {% for navLink in params.navigation %}
       <a class="hvr-{{ params.onHover }} xyz-in" href="{{ navLink.href }}">{{ navLink.name }}</a>
     {% endfor %}

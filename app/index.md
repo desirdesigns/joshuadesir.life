@@ -2,9 +2,7 @@
 title: Home
 layout: landing
 menu:
-  links:
-  - name: ''
-    url: ''
+ links:
   - name: Resume
     url: "/resume/"
 footer:
@@ -13,10 +11,11 @@ footer:
 permalink: "/"
 articles:
   articles:
-  - title: ''
-    description: ''
+  - title: 'Self-aware Designer'
+    description: 'I help mend broken ideas into profound life-works.'
     class: ''
-    actions: ''
+    actions:
+     - name: 'Request Consultation'
 header:
   title: Joshuadesir.life
   titleLink: "/"
