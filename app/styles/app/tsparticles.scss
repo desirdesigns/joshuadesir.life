@@ -1,8 +1,7 @@
 #tsparticles {
-    position: fixed;
-    border: solid white 2px;
-    background-color: green;
-    z-index: 100000000000; 
+    opacity: 0.8;
+    position: relative;
+    z-index: -10; 
     top: 0; 
     left: 0; 
     width: 100%;

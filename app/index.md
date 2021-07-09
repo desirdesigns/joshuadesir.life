@@ -4,7 +4,7 @@ layout: landing
 menu:
  links:
   - name: Resume
-    url: "/resume/"
+    url: /resume/
 footer:
   header:
     title: Communications
@@ -16,6 +16,7 @@ articles:
     class: ''
     actions:
      - name: 'Request Consultation'
+
 header:
   title: Joshuadesir.life
   titleLink: "/"

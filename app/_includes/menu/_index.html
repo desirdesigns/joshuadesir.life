@@ -1,6 +1,7 @@
 {% comment %} 
- id: men
- type: component
+ id: menu
+ type: partial
+ version: 11.11.11
 {% endcomment %}
 
 {% assign params = page.menu %}
@@ -13,7 +14,7 @@
 
             {% for link in params.links %}
             <li>
-                <a class="hvr-{{ params.onHover }}" href="{{ link.url }}">{{ link.id }}</a>
+                <a class="hvr-{{ params.onHover }}" href="{{ link.url }}">{{ link.name }}</a>
             </li>
             {% endfor %}
     

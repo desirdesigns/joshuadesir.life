@@ -4,7 +4,6 @@ stylesheets:
 scripts: 
  basePath: /assets/scripts/
  postscripts: 
-  - path: jquery.min.js 
   - path: jquery.scrollex.min.js
   - path: browser.min.js
   - path: breakpoints.min.js
@@ -12,4 +11,5 @@ scripts:
   - path: util.js
   - path: main.js
   - path: vendor.js
+  - path: sPreloader.js
 
