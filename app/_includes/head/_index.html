@@ -9,7 +9,7 @@
 {% assign title = "head/title.html" %}
 {% assign meta = "head/meta.html" %}
 
-{% assign stylesheet = "head/stylesheet.html" %}
+{% assign stylesheets = "head/stylesheets.html" %}
 
 <head>
   {% include {{ title }} %}
@@ -20,7 +20,7 @@
 
   {% include {{ webfonts }} %}
 
-  {% include {{ stylesheet }} %}
+  {% include {{ stylesheets }} %}
 
   {% include {{ meta }} %}
 </head>

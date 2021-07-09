@@ -25,11 +25,12 @@
 <details>
  <summary><b>⚗️DevOps</b></summary>
  <ul>
- <li><a>Vercel | App Deployment</a></li>
+  <li><a>Vercel | App Deployment</a></li>
   <li><a>Forestry.io | CMS Framework</a></li>
-    <li><a>Github Actions | Chronical Task Runner</a></li>
-
+  <li><a>Github Actions | Chronical Task Runner</a></li>
  </ul>
 </details>
 
 ---
+
+### ASMR Recordings

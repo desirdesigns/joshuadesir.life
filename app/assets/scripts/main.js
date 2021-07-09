@@ -1,8 +1,3 @@
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
@@ -26,6 +21,15 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 50) {
+			   $('#header').addClass('xyz-in');
+			} else {
+			   $('#header').removeClass('xyz-out');
+			}
+		});
+
 
 	// Header.
 		if ($banner.length > 0
