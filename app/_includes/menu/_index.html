@@ -12,8 +12,8 @@
         <ul class="links">
 
             {% for link in params.links %}
-            <li class="hvr-{{ params.onHover }}">
-                <a href="{{ link.url }}">{{ link.id }}</a>
+            <li>
+                <a class="hvr-{{ params.onHover }}" href="{{ link.url }}">{{ link.id }}</a>
             </li>
             {% endfor %}
     

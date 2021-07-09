@@ -27,10 +27,14 @@
           {{ article.description }}
         </p>
 
-        {% for action in article.actions %}
-        <a href="{{ action.url }}" class="special">{{ action.name }}</a>
-        {% endfor %}
-
+       
+        <nav>
+          {% for action in article.actions %}
+          <a href="{{ action.url }}" class="special">{{ action.name }}</a>
+          {% endfor %}
+  
+        </nav>
+        
       </div>
     </div>
   </section>

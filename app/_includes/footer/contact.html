@@ -6,21 +6,3 @@
 
 {% assign params = site.data.footer.contact %}
 
-{% if params %}
-<form method="post" action="{{ params.action }}">
-    <div class="fields">
-      
-       {% for field in params.fields %}
-      <div class="field">
-        <label for="{{ field.name }}">{{ field.name }}</label>
-        <input type="{{ field.type }}" name="{{ field.name }}" id="{{ field.id }}" />
-      </div>
-      {% endfor %}
-
-    <ul class="actions">
-      {% for action in params.actions %}
-      <li><input type="submit" value="{{ action.value }}" />{{ action.name }}</li>
-      {% endfor %}
-    </ul>
-  </form>
-  {% endif %}
