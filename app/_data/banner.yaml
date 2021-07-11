@@ -1,3 +1,6 @@
 title: Joshuadesir.life
 backgroundImage: /assets/images/banner.png 
 description: Inform + Infiltrate + Inspire
+descriptionOnHover: sweep-to-right
+backgroundImageOnHover: grow-rotate
+titleOnHover: wobble-to-bottom-right

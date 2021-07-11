@@ -15,6 +15,7 @@
 
 {% if params %}
 <section 
+ 
  style="background: url('{{ params.backgroundImage }}');
         min-height: 500px;
         background-attachment: fixed;
@@ -24,11 +25,12 @@
        
     <div class="inner">
       <div class="logo">
-       <img src="/assets/images/logos/logo.png" height="128px" width="128px"/>
+       <img class="hvr-{{ params.backgroundImageOnHover }}" src="/assets/images/logos/logo.png" height="168px" width="168px"/>
      </div>
 
-      <h2>{{ params.title }}</h2>
-      <p>
+      <h2 class="hvr-{{ params.titleOnHover }}">{{ params.title }}</h2>
+      <br>
+      <p class="hvr-{{ params.descriptionOnHover }}">
         {{ params.description }}
       </p>
     </div>

@@ -9,7 +9,17 @@ stylesheets:
       - cdn.jsdelivr.net/npm/@animxyz/core
       - unpkg.com/basscss@8.0.2/css/basscss.min.css
 
-scripts:
+prescripts:
+  
+  - id: Libs
+    basePath: https://
+    collection:
+      - code.jquery.com/jquery-3.6.0.min.js
+      - code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
+      - cdn.jsdelivr.net/npm/tsparticles
+      - cdn.jsdelivr.net/npm/jquery-particles
+
+postscripts:
   - id: System
     basePath: /assets/scripts/system/
     collection:
@@ -18,6 +28,8 @@ scripts:
       - jquery.scrollex.min.js
       - util.js
       - main.js
+      - jquery.headroom.js
+      - headroom.min.js
 
 images:
   - basePath: /assets/images/icons/fontawesome/

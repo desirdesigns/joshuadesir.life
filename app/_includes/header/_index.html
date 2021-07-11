@@ -14,16 +14,25 @@
   {% assign params = global_params %}
 {% endif %} 
 
-<header id="header" class="alt" >
-    <h1>
+<header id="header" class="alt" style="background: url('/assets/images/banner.png')" >
+    <h1 class="hvr-{{ params.titleOnHover }}">
       <a href="{{ params.titleLink }}">{{ params.title }}</a>
     </h1>
-
+    <details class="dropdown lg-hide xl-hide" id="hooks">
+      <summary class="">🪝</summary>
+      <ul>
+        {% for i in (1..2) %}
+        <li>{{ i }}</li>
+        {% endfor %}
+      </ul>
+    </details>
     <nav class="flex" xyz="stagger-4 fade">
     {% for navLink in params.navigation %}
-      <a class="hvr-{{ params.onHover }} xyz-in" href="{{ navLink.href }}">{{ navLink.name }}</a>
+      <a class="hvr-{{ params.onHover }}  sm-hide xs-hide xyz-in" href="{{ navLink.href }}">{{ navLink.name }}</a>
+      
     {% endfor %}
-     <a class="xyz-in" href="{{ MENU_REF }}">🍔{{ params.menuTitle }}</a>
+    
+     <a class="xyz-in hvr-{{ params.menu.onHover }}" href="{{ MENU_REF }}">🍔{{ params.menuTitle }}</a>
     </nav>
 
 

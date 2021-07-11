@@ -1,13 +1,25 @@
 ---
 title: Home
 layout: landing
+majors: 
+ majors: 
+  - title: Modus Operandi
+    description: I am creative entrepreneur
 menu:
+ name: Directory
  links:
+  - name: About Me.
+    url: /about/
+
+  - name: Portfolio
+    url: /portfolio/
+
   - name: Resume
     url: /resume/
+
 footer:
   header:
-    title: Communications
+    title: Contact Me
 permalink: "/"
 articles:
   articles:
@@ -19,9 +31,17 @@ articles:
 
 header:
   title: Joshuadesir.life
+  titleOnHover: pulse-shrink
   titleLink: "/"
   menuTitle: 
+  menu:
+   onHover: grow
   onHover: sweep-to-top
   navigation: 
-
+   - name: Modus Operandi
+   - name: Services
+   - name: Feed
+   - name: Contact Me
 ---
+
+
