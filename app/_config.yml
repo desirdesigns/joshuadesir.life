@@ -9,5 +9,13 @@ sass:
  sass_dir: styles 
  style: compressed  
 
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  startings: [html, head, body]
 
-exclude: [styles, controllers]
+exclude: [styles, controllers, package.json, package-lock.json]

@@ -6,6 +6,7 @@
   <li><a>Hover.css | Hover Animations</a></li>
    <li><a>Solid State | UI Skeleton</a></li>
    <li><a>TsParticles | Particles Generator</a></li>
+   <li><a href="https://github.com/penibelst/jekyll-compress-html">Jekyll Compress HTML</a></li>
  </ul>
 </details>
 
@@ -32,5 +33,3 @@
 </details>
 
 ---
-
-### ASMR Recordings

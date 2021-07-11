@@ -1,3 +1,16 @@
-<link rel="stylesheet" href="{{ site.data.assets.stylesheets.main }}" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
-<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+{% comment %}
+ id: head.stylesheets
+ type: element
+ version: 11.11.11
+{% endcomment %}
+
+{% assign params = site.data.assets.stylesheets %}
+{% assign RELATIONSHIP = "stylesheet" %}
+
+{% for stylesheet in params %}
+ {% assign basePath = stylesheet.basePath %} 
+  {% for path in stylesheet.collection %} 
+   <link rel="{{ RELATIONSHIP }}" href="{{ basePath }}{{ path }}"/>
+   {% endfor %}
+   {% endfor %}
+

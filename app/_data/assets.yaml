@@ -1,15 +1,24 @@
-stylesheets: 
- main: /assets/styles/main.css 
+stylesheets:
+  - id: Main
+    basePath: /assets/styles/
+    collection:
+      - main.css
 
-scripts: 
- basePath: /assets/scripts/
- postscripts: 
-  - path: jquery.scrollex.min.js
-  - path: browser.min.js
-  - path: breakpoints.min.js
-  - path: headroom.min.js 
-  - path: util.js
-  - path: main.js
-  - path: vendor.js
-  - path: sPreloader.js
+  - basePath: https://
+    collection:
+      - cdn.jsdelivr.net/npm/@animxyz/core
+      - unpkg.com/basscss@8.0.2/css/basscss.min.css
 
+scripts:
+  - id: System
+    basePath: /assets/scripts/system/
+    collection:
+      - browser.min.js
+      - breakpoints.min.js
+      - jquery.scrollex.min.js
+      - util.js
+      - main.js
+
+images:
+  - basePath: /assets/images/icons/fontawesome/
+    collection:
