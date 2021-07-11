@@ -111,6 +111,7 @@
     $header = $("#header"),
     $banner = $("#banner");
 
+
   // Breakpoints.
   breakpoints({
     xlarge: "(max-width: 1680px)",

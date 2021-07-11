@@ -1,6 +1,18 @@
 ---
 title: Home
 layout: landing
+
+features: 
+ title: Latest
+ description: My Latest involvenets. 
+ features: 
+  - title: Inform & Inspire, LLC
+    description:
+
+  - title: E.R.A.T.I
+    description: 
+
+  - title: REFUSE THE VACCINE "Save Your Own Life" T-Shirts
 majors: 
  majors: 
   - title: Modus Operandi
@@ -11,10 +23,10 @@ menu:
   - name: About Me.
     url: /about/
 
-  - name: Portfolio
+  - name: Portfolio.
     url: /portfolio/
 
-  - name: Resume
+  - name: Resume.
     url: /resume/
 
 footer:
@@ -23,7 +35,7 @@ footer:
 permalink: "/"
 articles:
   articles:
-  - title: 'Self-aware Designer'
+  - title: Graphic Design
     description: 'I help mend broken ideas into profound life-works.'
     class: ''
     actions:
@@ -39,9 +51,16 @@ header:
   onHover: sweep-to-top
   navigation: 
    - name: Modus Operandi
+     href: "#modus-operandi"
+
    - name: Services
-   - name: Feed
+     href: "#services"
+
+   - name: Latest
+     href: "#latest"
+
    - name: Contact Me
+     href: "#contact-me"
 ---
 
 
