@@ -8,6 +8,11 @@
 {% assign global_params = site.data.header %}
 {% assign MENU_REF = "#menu" %} 
 
+{% assign _dropdown_ = "header/mobile_dropdown.html" %}
+
+{% assign icon = "icon/_index.html" %}
+
+
 {% if local_params %} 
   {% assign params = local_params %} 
  {% else %} 
@@ -18,21 +23,15 @@
     <h1 class="hvr-{{ params.titleOnHover }}">
       <a href="{{ params.titleLink }}">{{ params.title }}</a>
     </h1>
-    <details class="dropdown lg-hide xl-hide" id="hooks">
-      <summary class="">🪝</summary>
-      <ul>
-        {% for i in (1..2) %}
-        <li>{{ i }}</li>
-        {% endfor %}
-      </ul>
-    </details>
+    
+    {% include {{ _dropdown_}} %}
     <nav class="flex" xyz="stagger-4 fade">
     {% for navLink in params.navigation %}
       <a class="hvr-{{ params.onHover }}  sm-hide xs-hide xyz-in" href="{{ navLink.href }}">{{ navLink.name }}</a>
       
     {% endfor %}
     
-     <a class="xyz-in hvr-{{ params.menu.onHover }}" href="{{ MENU_REF }}">🍔{{ params.menuTitle }}</a>
+     <a class="xyz-in hvr-{{ params.menu.onHover }}" href="{{ MENU_REF }}">{% include {{ icon }} classes="mb4 p1" collection="fontawesome" set="solid" icon="hamburger" height="32px" width="32px" %}{{ params.menuTitle }}</a>
     </nav>
 
 

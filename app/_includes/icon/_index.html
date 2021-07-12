@@ -1,6 +1,14 @@
+{% comment %} 
+ id: icon
+ type: component
+ version: 11.11.11
+{% endcomment %}
+
+
 {% assign basePath = "/assets/images/icons/" %}
 
 <img 
-    src="{{ basePath }}"
-    height="40p"
-    width="40px" />
+    class="m1 p1 icon {{ include.classes }}"
+    src="{{ basePath }}{{ include.collection }}/{{ include.set }}/{{ include.icon }}.svg"
+    height="{{ include.height }}"
+    width="{{ include.width }}" />

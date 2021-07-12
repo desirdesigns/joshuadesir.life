@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app:dev": "bundle install && bundle update && bundle exec jekyll serve JEKYLL_ENV=production",
+    "app:dev": "bundle install && bundle update && bundle exec jekyll serve JEKYLL_ENV=production --port 4005",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joshua Desir",

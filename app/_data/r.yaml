@@ -1,5 +1,3 @@
----
-title: Home
 title: Home
 layout: landing
 permalink: /
@@ -23,7 +21,6 @@ majors:
 
 menu:
   name: Directory
-  onHover: grow-shadow
   links:
     - name: About Me.
       url: /about/
@@ -33,9 +30,6 @@ menu:
 
     - name: Resume.
       url: /resume/
-
-    - name: Publication
-      url: /publication/
 
 footer:
   header:
@@ -50,7 +44,7 @@ articles:
 
     - title: Entreprenual Consultation
       description: "I help mend broken ideas into profound life-works."
-      class: "alt"
+      class: ""
       actions:
         - name: "Request Consultation"
 
@@ -74,5 +68,3 @@ header:
 
     - name: Contact Me
       href: "#contact-me"
-
----

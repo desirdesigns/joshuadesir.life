@@ -1,0 +1,22 @@
+banner:
+menu:
+footer:
+contact:
+socials:
+  onHover:
+  socials:
+    - icon: twitter
+      collection: brands
+      href: https://twitter.com/joshuadesir
+    - icon: facebook
+      href: https://twitter.com/joshuadesir
+      collection: brands
+    - icon: youtube
+      href: https://twitter.com/joshuadesir
+      collection: brands
+    - icon: linkedin
+      href: https://twitter.com/joshuadesir
+      collection: brands
+    - icon: github
+      collection: brands
+      href: https://github.com/joshuadesir

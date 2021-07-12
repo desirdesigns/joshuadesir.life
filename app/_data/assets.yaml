@@ -18,6 +18,8 @@ prescripts:
       - code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
       - cdn.jsdelivr.net/npm/tsparticles
       - cdn.jsdelivr.net/npm/jquery-particles
+      - cdn.statically.io/gh/kswedberg/jquery-smooth-scroll/3948290d/jquery.smooth-scroll.min.js
+
 
 postscripts:
   - id: System
