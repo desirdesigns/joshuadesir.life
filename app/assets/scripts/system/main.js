@@ -105,7 +105,12 @@
         },
       },
     });
-
+    let _header = $('#header');
+    let _a = $('a');
+  
+    _a.smoothScroll();
+  
+    _header.headroom();
   var $window = $(window),
     $body = $("body"),
     $header = $("#header"),

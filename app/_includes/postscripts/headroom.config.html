@@ -16,7 +16,10 @@
     },
   };
 
-  $('a').smoothScroll();
+  let _header = $('#header');
+  let _a = $('a');
 
-  $("#header").headroom(configs);
+  _a.smoothScroll();
+
+  _header.headroom(configs);
 </script>

@@ -31,7 +31,8 @@
       
     {% endfor %}
     
-     <a class="xyz-in hvr-{{ params.menu.onHover }}" href="{{ MENU_REF }}">{% include {{ icon }} classes="mb4 p1" collection="fontawesome" set="solid" icon="hamburger" height="32px" width="32px" %}{{ params.menuTitle }}</a>
+     <a style="text-align: center; margin-bottom: -0.2em;" class="xyz-in hvr-{{ params.menu.onHover }}" href="{{ MENU_REF }}">
+       {% include {{ icon }} classes="m5 p" collection="fontawesome" set="solid" icon="hamburger" height="32px" width="32px" %}{{ params.menuTitle }}</a>
     </nav>
 
 
