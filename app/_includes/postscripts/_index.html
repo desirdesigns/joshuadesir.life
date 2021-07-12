@@ -5,7 +5,6 @@
 {% endcomment %}
 
 {% assign params = site.data.assets.postscripts %} 
-{% assign headroom = "postscripts/headroom.config.html" %} 
 
 {% for script in params %}
  {% assign basePath = script.basePath %}
@@ -14,4 +13,3 @@
 {% endfor %}
 {% endfor %}
 
-{% include {{ headroom }} %}

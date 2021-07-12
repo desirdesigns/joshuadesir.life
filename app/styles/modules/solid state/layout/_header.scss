@@ -55,6 +55,9 @@
       }
 
       &[href="#menu"] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include vendor("transition",
           "background-color #{_duration(transition)} ease-in-out"
         );
