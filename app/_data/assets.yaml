@@ -4,7 +4,8 @@ stylesheets:
     collection:
       - main.css
 
-  - basePath: https://
+  - id: Utils
+    basePath: https://
     collection:
       - cdn.jsdelivr.net/npm/@animxyz/core
       - unpkg.com/basscss@8.0.2/css/basscss.min.css
@@ -34,5 +35,6 @@ postscripts:
       - headroom.min.js
 
 images:
-  - basePath: /assets/images/icons/fontawesome/
+  - id: 
+    basePath: /assets/images/icons/fontawesome/
     collection:
