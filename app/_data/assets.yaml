@@ -35,6 +35,6 @@ postscripts:
       - headroom.min.js
 
 images:
-  - id: 
+  - id: Fontawesome
     basePath: /assets/images/icons/fontawesome/
     collection:

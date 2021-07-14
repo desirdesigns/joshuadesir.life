@@ -4,16 +4,16 @@
  version: 11.11.11
 {% endcomment %} 
 
-{% assign basePath = "/assets/images/icons/fontawesome/" %}
-{% assign params = site.data.meta.socials %}
+{% assign params = site.data.globals.footer.socials %}
+{% assign icon = "icon/_index.html" %}
 
 <ul class="socials">
 
     {% for social in params.socials %}
-    <li class="hvr-bob">
-        <button onclick="console.log('1');">
-            <img class="icon" src="{{ basePath }}{{ social.collection }}/{{ social.icon }}.svg" />
-
+    <li class="hvr-{{ params.onHover }}">
+        <button onclick="location.href='{{ social.href }}';">
+        {% assign collection = social.icon.collection %}
+        {% assign icon = social.icon.name %}
         </button>
         
     </li>

@@ -1,8 +1,10 @@
+{% assign global_params = site.data.globals.header.navigation.links %}
+
 <details class="dropdown lg-hide xl-hide" id="hook">
-    <summary class="">🪝</summary>
+    <summary id="hook"><code>@</code></summary>
     <ul>
-      {% for i in (1..2) %}
-      <li>{{ i }}</li>
+      {% for link in global_params %}
+      <li><a href="{{ link.href }}">{{ link.name }}</a></li>
       {% endfor %}
     </ul>
   </details>

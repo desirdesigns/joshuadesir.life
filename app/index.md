@@ -54,25 +54,5 @@ articles:
       actions:
         - name: "Request Consultation"
 
-header:
-  title: Joshuadesir.life
-  titleOnHover: pulse-shrink
-  titleLink: "/"
-  menuTitle:
-  menu:
-    onHover: grow
-  onHover: sweep-to-top
-  navigation:
-    - name: Modus Operandi
-      href: "#modus-operandi"
-
-    - name: Services
-      href: "#services"
-
-    - name: Latest
-      href: "#latest"
-
-    - name: Contact Me
-      href: "#contact-me"
 
 ---

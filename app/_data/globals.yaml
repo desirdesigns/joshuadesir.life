@@ -6,8 +6,31 @@ banner:
   source:  /assets/images/banner.png 
   onHover: grow-rotate
  description: 
-  text: Inform + Infiltrate + Inspire
+  text: >-
+    "for I have sworn upon the altar of god eternal hostility against every form of tyranny over the mind of man."
   onHover: sweep-to-right
+
+header: 
+   title: 
+    text: Joshuadesir.life
+    onHover: pulse-shrink
+    link: "/"
+   backgroundImage:
+    source: /assets/images/banner.png
+   navigation:
+    name: "&"
+    links:
+    - name: Modus Operandi
+      href: "#modus-operandi"
+
+    - name: Services
+      href: "#services"
+
+    - name: Latest
+      href: "#latest"
+
+    - name: Contact Me
+      href: "#contact-me"
 
 menu:
 footer:
