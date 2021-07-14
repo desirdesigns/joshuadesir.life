@@ -5,7 +5,7 @@
 {% endcomment %}
 
 {% assign local_params = page.banner %} 
-{% assign global_params = site.data.banner %}
+{% assign global_params = site.data.globals.banner %}
  
 {% if local_params %} 
  {% assign params = local_params %}
@@ -16,22 +16,22 @@
 {% if params %}
 <section 
  
- style="background: url('{{ params.backgroundImage }}');
+ style="background: url('{{ params.backgroundImage.source }}');
         min-height: 500px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-       background-size: cover;" id="banner">
+        background-size: cover;" id="banner">
        
     <div class="inner">
       <div class="logo">
-       <img class="hvr-{{ params.backgroundImageOnHover }}" src="/assets/images/logos/logo.png" height="168px" width="168px"/>
+       <img class="hvr-{{ params.backgrouondImage.onHover }}" src="/assets/images/logos/logo.png" height="168px" width="168px"/>
      </div>
 
-      <h2 class="hvr-{{ params.titleOnHover }}">{{ params.title }}</h2>
+      <h2 class="hvr-{{ params.title.onHover }}">{{ params.title.text }}</h2>
       <br>
-      <p class="hvr-{{ params.descriptionOnHover }}">
-        {{ params.description }}
+      <p class="hvr-{{ params.description.onHover }}">
+        {{ params.description,text }}
       </p>
     </div>
   </section>
