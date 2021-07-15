@@ -3,9 +3,8 @@
 **Creating Pages** 
 
 <details>
- <summary>CMS Admin</summary> 
-  lorem ipsum dolor sit amet
-
+ <summary><b>CMS Admin</b></summary> 
+  
 </details>
 
 <details>

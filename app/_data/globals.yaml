@@ -18,7 +18,9 @@ header:
    backgroundImage:
     source: /assets/images/banner.png
    navigation:
-    name: "&"
+    menu: 
+     name:
+     onHover:
     links:
     - name: Modus Operandi
       href: "#modus-operandi"
@@ -41,25 +43,3 @@ footer:
   - text: Made w/ Jekyll & 🔥 The Wrath of God.
   - text: MIT License
   
-  onHover: underline-from-center
-
-
-contact:
-socials:
-  onHover:
-  socials:
-    - icon: twitter
-      collection: brands
-      href: https://twitter.com/joshuadesir
-    - icon: facebook
-      href: https://twitter.com/joshuadesir
-      collection: brands
-    - icon: youtube
-      href: https://twitter.com/joshuadesir
-      collection: brands
-    - icon: linkedin
-      href: https://twitter.com/joshuadesir
-      collection: brands
-    - icon: github
-      collection: brands
-      href: https://github.com/joshuadesir

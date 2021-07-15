@@ -18,9 +18,8 @@ _**a portfolio & organization kit for a creative designer to inform & inspire wi
 **Creating Pages** 
 
 <details>
- <summary>CMS Admin</summary> 
-  lorem ipsum dolor sit amet
-
+ <summary><b>CMS Admin</b></summary> 
+  
 </details>
 
 <details>
@@ -59,7 +58,7 @@ vagrant up
 cd app && npm run app:dev 
 ``` 
 
-
+---
 <h2>🧰Technologies</h2> 
 
 <details>
@@ -68,6 +67,7 @@ cd app && npm run app:dev
   <li><a>Hover.css | Hover Animations</a></li>
    <li><a>Solid State | UI Skeleton</a></li>
    <li><a>TsParticles | Particles Generator</a></li>
+   <li><a href="https://github.com/penibelst/jekyll-compress-html">Jekyll Compress HTML</a></li>
  </ul>
 </details>
 
@@ -87,10 +87,9 @@ cd app && npm run app:dev
 <details>
  <summary><b>⚗️DevOps</b></summary>
  <ul>
- <li><a>Vercel | App Deployment</a></li>
+  <li><a>Vercel | App Deployment</a></li>
   <li><a>Forestry.io | CMS Framework</a></li>
-    <li><a>Github Actions | Chronical Task Runner</a></li>
-
+  <li><a>Github Actions | Chronical Task Runner</a></li>
  </ul>
 </details>
 
