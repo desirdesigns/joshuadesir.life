@@ -7,51 +7,47 @@
 
 {% assign local_params = page.footer.header %} 
 
-{% assign params = site.data.footer.header %}
+{% assign params = site.data.globals.footer.header %}
 
 {% assign contact = "footer/contact.html" %} 
 
-<div class="wrapper">
-
-    <h2 class="major">{{ local_params.title }}</h2>
-
-    <p>
-    {{ local_params.description }} 
-    </p>
-
 <div class="inner">
-    <form method="post" action="#">
-        <div class="fields">
-            <div class="field">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+    <div class="wrapper">
+
+        <h2 class="hvr-{{ params.title.onHover }} major">{{ params.title.text }}</h2>
+    
+        <p>{{ params.description.text }}</p>
+    
+    <div class="inner">
+        <form method="post" action="#">
+            <div class="fields">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                </div>
             </div>
-            <div class="field">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-        </div>
-        <ul class="actions">
-            <li><input type="submit" value="Send Message"></li>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message"></li>
+            </ul>
+        </form>
+        
+        <ul class="contact">
+
+            {% for link in params.contact.links %}
+            <li class="icon solid fa-home">
+              {{ link.id }}
+            </li>
+            {% endfor %}
         </ul>
-    </form>
-    
-    <ul class="contact">
-        <li class="icon solid fa-home">
-            Untitled Inc<br>
-            1234 Somewhere Road Suite #2894<br>
-            Nashville, TN 00000-0000
-        </li>
-        <li class="icon solid fa-phone">(000) 000-0000</li>
-        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-        <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-        <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-        <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-    </ul>
-</div>
-    
+    </div>
+    </div>
+
 </div>

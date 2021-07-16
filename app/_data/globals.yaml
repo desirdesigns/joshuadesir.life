@@ -35,7 +35,18 @@ header:
         href: "#contact-me"
 
 menu:
+
 footer:
+  header:
+    title:
+      text: Contact Me.
+      onHover: sweep-to-top
+    description: >-
+      Send me a thoughtful message for service.
+  contact:
+    links:
+      - id: Hello
+
   socials:
     onHover: bob
     socials:

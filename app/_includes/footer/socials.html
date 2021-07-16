@@ -12,8 +12,9 @@
     {% for social in params.socials %}
     <li class="hvr-{{ params.onHover }}">
         <button onclick="location.href='{{ social.href }}';">
-        {% assign collection = social.fa_icon.collection %}
-        {% assign icon = social.fa_icon.id %}
+        {% assign _coll_ = social.fa_icon.collection %}
+        {% assign _id_ = social.fa_icon.id %}
+        {% include {{ icon }} type='fa_icon' id=_id_ collection=_coll_ height='22px' width='22px' %}
         </button>
         
     </li>

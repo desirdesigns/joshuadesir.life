@@ -4,16 +4,10 @@
  version: 11.11.11
 {% endcomment %} 
 
-{% assign contact = "footer/contact.html" %}
 {% assign header = "footer/header.html" %}
 {% assign toe = "footer/toe.html" %}
 
 <section id="footer">
- 
-  <div class="inner">
-    {% include {{ header }} %}
-    </div>
-   
+  {% include {{ header }} %}
   {% include {{ toe }} %}
-
-  </section>
+</section>

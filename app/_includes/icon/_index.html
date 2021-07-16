@@ -8,8 +8,12 @@
 
 {% assign basePath = "/assets/images/icons/" %}
 
+{% capture _type_ %}
+ {{ include.type }}
+{% endcapture %}
+
 {% capture _id_ %}
-{{ include.id }}
+ {{ include.id }}
 {% endcapture %}
 
 {% if _type_ == "fa_icon" %}
@@ -17,6 +21,10 @@
  {{ include.id }}
  {% endcapture %}
 
- {% include {{ fa_icon }} id=_id_ collection=_coll_ %}
+ {% capture _coll_ %}
+ {{ include.coll }}
+ {% endcapture %}
+
+{% include {{ fa_icon }} id=_id_ collection=_coll_ %}
 {% endif %}
 
