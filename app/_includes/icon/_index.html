@@ -4,11 +4,19 @@
  version: 11.11.11
 {% endcomment %}
 
+{% assign fa_icon = "icon/fa_icon.html" %}
 
 {% assign basePath = "/assets/images/icons/" %}
 
-<img 
-    class="m1 p1 icon {{ include.classes }}"
-    src="{{ basePath }}{{ include.collection }}/{{ include.set }}/{{ include.icon }}.svg"
-    height="{{ include.height }}"
-    width="{{ include.width }}" />
+{% capture _id_ %}
+{{ include.id }}
+{% endcapture %}
+
+{% if _type_ == "fa_icon" %}
+ {% capture _id_ %}
+ {{ include.id }}
+ {% endcapture %}
+
+ {% include {{ fa_icon }} id=_id_ collection=_coll_ %}
+{% endif %}
+

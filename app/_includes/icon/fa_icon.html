@@ -1,0 +1,8 @@
+
+{% assign basePath = site.data.assets.images['Fontawesome'].basePath %}
+
+<img 
+    class="m1 p1 icon {{ include.classes }}"
+    src="{{ basePath }}{{ include.collection }}/{{ include.set }}/{{ include.icon }}.svg"
+    height="{{ include.height }}"
+    width="{{ include.width }}" />

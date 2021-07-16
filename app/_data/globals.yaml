@@ -36,9 +36,39 @@ header:
 
 menu:
 footer:
+  socials:
+    onHover: bob
+    socials:
+      - id: twitter
+        fa_icon:
+          id: twitter
+          collection: brands
+        href: https://twitter.com/joshuadesir.life
+      - id: twitter
+        fa_icon:
+          id: twitter
+          collection: brands
+        href: https://twitter.com/joshuadesir.life
+      - id: twitter
+        fa_icon:
+          id: twitter
+          collection: brands
+        href: https://twitter.com/joshuadesir.life
+      - id: twitter
+        fa_icon:
+          id: twitter
+          collection: brands
+        href: https://twitter.com/joshuadesir.life
+      - id: twitter
+        fa_icon:
+          id: twitter
+          collection: brands
+        href: https://twitter.com/joshuadesir.life
+
   copyright:
+    onHover: sweep-to-top
     lines:
       - text: "&copy; Joshuadesir.life, 2021"
         url: https://github.com/jffrydsr/joshuadesir.life/
-      - text: Made w/ Jekyll & 🔥 The Wrath of God.
+      - text: Made w/ Jekyll & The Wrath of God.
       - text: MIT License
