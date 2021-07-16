@@ -1,45 +1,44 @@
 banner:
- title: 
-  text: Joshuadesir.life
-  onHover: wobble-to-bottom-right
- backgroundImage:
-  source:  /assets/images/banner.png 
-  onHover: grow-rotate
- description: 
-  text: >-
-    "for I have sworn upon the altar of god eternal hostility against every form of tyranny over the mind of man."
-  onHover: sweep-to-right
+  title:
+    text: Joshuadesir.life
+    onHover: wobble-to-bottom-right
+  backgroundImage:
+    source: /assets/images/banner.png
+    onHover: grow-rotate
+  description:
+    text: >-
+      "for I have sworn upon the altar of god eternal hostility against every form of tyranny over the mind of man."
+    onHover: sweep-to-right
 
-header: 
-   title: 
+header:
+  title:
     text: Joshuadesir.life
     onHover: pulse-shrink
     link: "/"
-   backgroundImage:
+  backgroundImage:
     source: /assets/images/banner.png
-   navigation:
-    menu: 
-     name:
-     onHover:
+  navigation:
+    menu:
+      name: "&"
+      onHover: sweep-to-top
     links:
-    - name: Modus Operandi
-      href: "#modus-operandi"
+      - name: Modus Operandi
+        href: "#modus-operandi"
 
-    - name: Services
-      href: "#services"
+      - name: Services
+        href: "#services"
 
-    - name: Latest
-      href: "#latest"
+      - name: Latest
+        href: "#latest"
 
-    - name: Contact Me
-      href: "#contact-me"
+      - name: Contact Me
+        href: "#contact-me"
 
 menu:
 footer:
- copyright:   
-  lines:
-  - text: "&copy; Joshuadesir.life, 2021"
-    url: https://github.com/jffrydsr/joshuadesir.life/
-  - text: Made w/ Jekyll & 🔥 The Wrath of God.
-  - text: MIT License
-  
+  copyright:
+    lines:
+      - text: "&copy; Joshuadesir.life, 2021"
+        url: https://github.com/jffrydsr/joshuadesir.life/
+      - text: Made w/ Jekyll & 🔥 The Wrath of God.
+      - text: MIT License

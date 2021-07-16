@@ -27,7 +27,7 @@
     {% include {{ _dropdown_}} %}
     <nav class="flex" xyz="stagger-4 fade">
     {% for navLink in params.navigation %}
-      <a class="hvr-{{ params.onHover }}  sm-hide xs-hide xyz-in" href="{{ navLink.href }}">{{ navLink.name }}</a>
+      <a class="hvr-{{ params.onHover }} sm-hide xs-hide xyz-in" href="{{ navLink.href }}">{{ navLink.name }}</a>
       
     {% endfor %}
     
