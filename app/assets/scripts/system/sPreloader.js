@@ -73,7 +73,7 @@
         var per = Math.round((current / items.length) * 100);
         $(jBar).stop().animate({
             width: per + '%'
-        }, 500, 'linear');
+        }, 800, 'linear');
         
         if(jpreOptions.showPercentage) {
             $(jPer).text(per);
@@ -94,8 +94,8 @@
     var loadComplete = function() {
         $(jBar).stop().animate({
             width: '100%'
-        }, 500, 'linear', function() {
-            $(jOverlay).fadeOut(800, function() {
+        }, 800, 'linear', function() {
+            $(jOverlay).fadeOut(1800, function() {
                 onComplete();
             });
         }); 

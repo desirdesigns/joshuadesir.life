@@ -15,7 +15,7 @@ prescripts:
   - id: Libs
     basePath: https://
     collection:
-      - code.jquery.com/jquery-3.6.0.min.js
+      - code.jquery.com/jquery-1.12.4.min.js
       - code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
       - cdn.jsdelivr.net/npm/tsparticles
       - cdn.jsdelivr.net/npm/jquery-particles
@@ -33,6 +33,7 @@ postscripts:
       - main.js
       - jquery.headroom.js
       - headroom.min.js
+      - sPreloader.js
 
 images:
  fontawesome:

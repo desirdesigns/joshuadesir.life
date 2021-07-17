@@ -5,6 +5,7 @@
 {% endcomment %}
 
 {% assign params = site.data.assets.postscripts %} 
+{% assign preloaderConfig = "postscripts/preloader.config.html" %}
 
 {% for script in params %}
  {% assign basePath = script.basePath %}
@@ -12,4 +13,6 @@
  <script src="{{ basePath }}{{ path }}"></script>
 {% endfor %}
 {% endfor %}
+
+{% include {{ preloaderConfig }} %}
 

@@ -6,25 +6,17 @@
 
 {% assign fa_icon = "icon/fa_icon.html" %}
 
-{% assign basePath = "/assets/images/icons/" %}
-
-{% capture _type_ %}
- {{ include.type }}
-{% endcapture %}
-
-{% capture _id_ %}
- {{ include.id }}
-{% endcapture %}
+{% capture _type_ %}{{ include.type }}{% endcapture %}
 
 {% if _type_ == "fa_icon" %}
- {% capture _id_ %}
- {{ include.id }}
- {% endcapture %}
+ {% capture _id_ %}{{ include.id }}{% endcapture %}
 
- {% capture _coll_ %}
- {{ include.coll }}
- {% endcapture %}
+ {% capture _coll_ %}{{ include.coll }}{% endcapture %}
 
-{% include {{ fa_icon }} id=_id_ collection=_coll_ %}
+ {% capture _height_ %}{{ include.height }}{% endcapture %}
+
+ {% capture _width_ %}{{ include.width }}{% endcapture %}
+
+ {% include {{ fa_icon }} height=_height_ width=_width_ id=_id_ collection=_coll_ %}
 {% endif %}
 
