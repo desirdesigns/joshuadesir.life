@@ -1,8 +1,13 @@
+{% comment %} 
+ id: fa_icon.icon
+ type: Element 
+ version: 11.11.11
+{% endcomment %} 
 
 {% assign basePath = site.data.assets.images.fontawesome.basePath %}
 
 <img 
-    class="m1 p1 icon {{ include.classes }}"
+    class="icon {{ include.classes }}"
     src="{{ basePath }}{{ include.collection }}/{{ include.id }}.svg"
     height="{{ include.height }}"
     width="{{ include.width }}" />
