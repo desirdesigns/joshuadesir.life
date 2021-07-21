@@ -23,6 +23,7 @@
 	}
 
 	#wrapper {
+		background: linear-gradient(yellow, black, 45deg) !important;
 		> header {
 			@include padding(7.5em, 0, (3.5em, 0, _size(wrapper-edges, large) * -0.5, 0));
 

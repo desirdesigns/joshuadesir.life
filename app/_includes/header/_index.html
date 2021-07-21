@@ -4,34 +4,29 @@
  version: 11.11.11
 {% endcomment %}
 
-{% assign local_params = page.header %}
-{% assign global_params = site.data.globals.header %}
+
 {% assign MENU_REF = "#menu" %} 
 
-{% assign _dropdown_ = "header/mobile_dropdown.html" %}
+{% assign params = page.header %}
 
-{% assign icon = "icon/_index.html" %}
+<script>
+  console.log('{{ params }} ');
+</script>
+<header id="header" 
+        class="alt" 
+        style="background: url('{{ params.backgroundImage.source }}')" >
 
-
-{% if local_params %} 
-  {% assign params = local_params %} 
- {% else %} 
-  {% assign params = global_params %}
-{% endif %} 
-
-<header id="header" class="alt" style="background: url('/assets/images/banner.png')" >
     <h1 class="hvr-{{ params.title.onHover }}">
       <a href="{{ params.title.link }}">{{ params.title.text }}</a>
+   
     </h1>
-    
-    {% include {{ _dropdown_}} %}
+
     <nav class="flex" xyz="stagger-4 fade">
-    {% for navLink in params.navigation %}
-      <a class="hvr-{{ params.onHover }} sm-hide xs-hide xyz-in" href="{{ navLink.href }}">{{ navLink.name }}</a>
-      
+    {% for link in params.headings.headings %}
+      <a class="hvr-{{ params.headings.onHover }} sm-hide xs-hide xyz-in" href="{{ link.href }}">{{ link.name }}</a>
     {% endfor %}
     
      <a class="xyz-in hvr-{{ params.navigation.menu.onHover }}" href="{{ MENU_REF }}">
-    {{ params.navigation.menu.name }}</a>
+    {{ params.headings.menu.title }}</a>
     </nav>
   </header>

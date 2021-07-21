@@ -5,3 +5,11 @@
     --header-height: var(--constant-height-1);
     --footer-z-index: 1000;
 }
+
+.ui-loader {
+
+    h1 {
+        display: none !important;
+    }
+    display: none !important;
+}

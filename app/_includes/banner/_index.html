@@ -4,20 +4,13 @@
  version: 11.11.11 
 {% endcomment %}
 
-{% assign local_params = page.banner %} 
-{% assign global_params = site.data.globals.banner %}
- 
-{% if local_params %} 
- {% assign params = local_params %}
- {% else %} 
-{% assign params = global_params %}
-{% endif %}
+{% assign params = page.banner %}
 
 {% if params %}
 <section 
  
  style="background: url('{{ params.backgroundImage.source }}');
-        min-height: 500px;
+        min-height: 600px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -25,7 +18,7 @@
        
     <div class="inner">
       <div class="logo">
-       <img class="hvr-{{ params.backgrouondImage.onHover }}" src="/assets/images/logos/logo.png" height="188px" width="188px"/>
+       <img class="hvr-{{ params.logo.onHover }}" src="{{ params.logo.source }}" height="188px" width="188px"/>
      </div>
 
       <h2 class="hvr-{{ params.title.onHover }}">{{ params.title.text }}</h2>

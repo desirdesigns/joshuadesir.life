@@ -1,39 +1,3 @@
-banner:
-  title:
-    text: Joshuadesir.life
-    onHover: wobble-to-bottom-right
-  backgroundImage:
-    source: /assets/images/banner.png
-    onHover: grow-rotate
-  description:
-    text: >-
-      "for I have sworn upon the altar of god eternal hostility against every form of tyranny over the mind of man."
-    onHover: sweep-to-right
-
-header:
-  title:
-    text: Joshuadesir.life
-    onHover: pulse-shrink
-    link: "/"
-  backgroundImage:
-    source: /assets/images/banner.png
-  navigation:
-    menu:
-      name: "&"
-      onHover: sweep-to-top
-    links:
-      - name: Modus Operandi
-        href: "#modus-operandi"
-
-      - name: Services
-        href: "#services"
-
-      - name: Latest
-        href: "#latest"
-
-      - name: Contact Me
-        href: "#contact-me"
-
 menu:
 
 footer:
@@ -57,23 +21,18 @@ footer:
         href: https://twitter.com/joshuadesir.life
       - id: twitter
         fa_icon:
-          id: twitter
+          id: facebook
           collection: brands
         href: https://twitter.com/joshuadesir.life
       - id: twitter
         fa_icon:
-          id: twitter
+          id: instagram
           collection: brands
         href: https://twitter.com/joshuadesir.life
-      - id: twitter
+      - id: linkedin
         fa_icon:
-          id: twitter
-          collection: brands
-        href: https://twitter.com/joshuadesir.life
-      - id: twitter
-        fa_icon:
-          id: twitter
-          collection: brands
+          id: mail
+          collection: solid
         href: https://twitter.com/joshuadesir.life
 
   copyright:
@@ -83,3 +42,5 @@ footer:
         url: https://github.com/jffrydsr/joshuadesir.life/
       - text: Made w/ Jekyll & The Wrath of God.
       - text: MIT License
+
+
