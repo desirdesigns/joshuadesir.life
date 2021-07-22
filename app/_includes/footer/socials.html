@@ -14,7 +14,7 @@
         <button class="icon flex item-center link" onclick="location.href='{{ social.href }}';">
         {% assign _coll_ = social.fa_icon.collection %}
         {% assign _id_ = social.fa_icon.id %}
-        {% include {{ icon }} classes="p-relative" type='fa_icon' id=_id_ collection=_coll_ height='33px' width='33px' %}
+        <img class="p-relative" type='fa_icon' id=_id_ collection=_coll_ height='33px' width='33px' />
         </button>
         
     </li>

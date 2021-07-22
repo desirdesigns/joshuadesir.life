@@ -29,11 +29,7 @@ footer:
           id: instagram
           collection: brands
         href: https://twitter.com/joshuadesir.life
-      - id: linkedin
-        fa_icon:
-          id: mail
-          collection: solid
-        href: https://twitter.com/joshuadesir.life
+
 
   copyright:
     onHover: sweep-to-top
