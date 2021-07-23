@@ -1,41 +1,5 @@
 stylesheets:
-  - id: Main
-    basePath: /assets/styles/
-    collection:
-      - main.css
-
-  - id: Utils
-    basePath: https://
-    collection:
-      - cdn.jsdelivr.net/npm/@animxyz/core
-      - unpkg.com/basscss@8.0.2/css/basscss.min.css
-
-prescripts:
-  
-  - id: Libs
-    basePath: https://
-    collection:
-      - code.jquery.com/jquery-1.12.4.min.js
-      - code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
-      - cdn.jsdelivr.net/npm/tsparticles
-      - cdn.jsdelivr.net/npm/jquery-particles
-      - cdn.statically.io/gh/kswedberg/jquery-smooth-scroll/3948290d/jquery.smooth-scroll.min.js
-
-
-postscripts:
-  - id: System
-    basePath: /assets/scripts/system/
-    collection:
-      - browser.min.js
-      - breakpoints.min.js
-      - jquery.scrollex.min.js
-      - util.js
-      - main.js
-      - jquery.headroom.js
-      - headroom.min.js
-      - sPreloader.js
-
-images:
- fontawesome:
-    basePath: /assets/images/icons/fontawesome/
-    collection:
+  - ns: app
+    basePath:
+    paths:
+      -

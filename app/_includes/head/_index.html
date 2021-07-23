@@ -1,26 +1,5 @@
 {% comment %} 
- id: head 
+ id: head
  type: partial
+ version: 11.11.11
 {% endcomment %}
-
-{% assign icons = "head/icons.html" %}
-{% assign prescripts = "head/prescripts.html" %} 
-{% assign webfonts = "head/webfonts.html" %} 
-{% assign title = "head/title.html" %}
-{% assign meta = "head/meta.html" %}
-
-{% assign stylesheets = "head/stylesheets.html" %}
-
-<head>
-  {% include {{ title }} %}
-
-  {% include {{ icons }} %}
-
-  {% include {{ prescripts }} %}
-
-  {% include {{ webfonts }} %}
-
-  {% include {{ stylesheets }} %}
-
-  {% include {{ meta }} %}
-</head>

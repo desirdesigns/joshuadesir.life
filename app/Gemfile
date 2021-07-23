@@ -4,10 +4,6 @@ gem "jekyll", "~> 4.2.0"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-default-layout"
-  gem "jekyll-tagging"
-  gem "jekyll-giphy"
-  gem "liquid-md5"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
