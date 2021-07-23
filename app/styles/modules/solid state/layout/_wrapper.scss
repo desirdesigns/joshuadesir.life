@@ -18,7 +18,6 @@
 }
 
 #wrapper {
-  background-image: linear-gradient(yellow, black, 45deg) !important;
   > header {
     @include padding(
       7.5em,
@@ -113,7 +112,6 @@
 }
 
 .wrapper {
-  background-color: _palette(bg);
   margin: _size(wrapper-edges, large) 0;
   position: relative;
   @include wrapper-edges-color(_palette(bg));
