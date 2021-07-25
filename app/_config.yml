@@ -1,6 +1,9 @@
-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+sass:
+  sass_dir: styles
+  style: compressed
 
 plugins:
   - jekyll-feed

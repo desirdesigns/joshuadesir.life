@@ -4,6 +4,6 @@
  version: 11.11.11
 {% endcomment %}
 
-{% assign params = page.title %}
+{% assign @title = site.title %}
 
-<title>{{ params }}</title>
+<title>{{ page.title }} @ {{ @title }}</title>
