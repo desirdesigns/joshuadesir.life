@@ -1,0 +1,6 @@
+socials:
+  - name: twitter
+    url: https://twitter.com/
+    icon:
+      id: twitter
+      set: brands

@@ -1,0 +1,11 @@
+{% comment %}
+{% endcomment %}
+
+{% assign @copyrights = site.data.copyrights %}
+
+<ul class="copyright">
+  {% for line in @copyrights.lines %}
+    <li class="hvr-{{ @copyrights.hoverEffect }}">{{ line }}</li>
+  {% endfor %}
+    <li></li>
+</ul>

@@ -5,7 +5,7 @@ $version: "0.5.9";
 $rtl: false;
 
 // Core colors
-$primary-color: #f1f1f1;
+$primary-color: #ffffff;
 $primary-color-dark: darken($primary-color, 3%);
 $primary-color-light: lighten($primary-color, 3%);
 $secondary-color: lighten($primary-color, 37.5%);
@@ -13,7 +13,7 @@ $secondary-color-dark: darken($secondary-color, 3%);
 $secondary-color-light: lighten($secondary-color, 3%);
 
 // Gray colors
-$dark-color: #303742;
+$dark-color: #ffffff;
 $light-color: rgb(17, 2, 2);
 $gray-color: lighten($dark-color, 55%);
 $gray-color-dark: darken($gray-color, 30%);
@@ -42,9 +42,9 @@ $link-color-light: lighten($link-color, 10%);
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+$base-font-family: "Expletus Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
   Roboto;
-$mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier,
+$mono-font-family: "Expletus Sans", "Segoe UI Mono", "Roboto Mono", Menlo, Courier,
   monospace;
 $fallback-font-family: "Helvetica Neue", sans-serif;
 $cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB",
