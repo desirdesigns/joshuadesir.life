@@ -3,7 +3,7 @@
 <img src="./docs/_logo.png" height="256px" width="256px"/>
 <h2>🔗TL;DR</h2>
 
-_**a portfolio & organization kit for a creative designer to inform & inspire with.**_
+_a portfolio & organization kit for a creative designer to inform & inspire with._
 
 --- 
 
@@ -15,24 +15,10 @@ _**a portfolio & organization kit for a creative designer to inform & inspire wi
 
 <h2>📟Usage</h2>
 
-**Creating Pages** 
+**Forestry.io**
 
-<details>
- <summary><b>CMS Admin</b></summary> 
-  
-</details>
+**Jekyll Admin**
 
-<details>
- <summary>Jekyll Admin</summary> 
-  lorem ipsum dolor sit amet
-
-</details>
-
-<details>
- <summary>Local</summary> 
-  lorem ipsum dolor sit amet
-
-</details>
 
 --- 
 
