@@ -1,14 +1,14 @@
 // Misc.
 	$misc: (
 		z-index-base:		10000
-	);
+	) !default;
 
 // Duration.
 	$duration: (
 		menu:				0.35s,
 		transition:			0.2s,
 		banner:				2.5s
-	);
+	) !default;
 
 // Size.
 	$size: (
@@ -16,7 +16,7 @@
 		element-height:		2.75em,
 		element-margin:		2em,
 		inner:				65em
-	);
+	) !default;
 
 // Font.
 	$font: (
@@ -26,7 +26,7 @@
 		weight-bold:		600,
 		letter-spacing:		0.025em,
 		letter-spacing-alt:	0.25em
-	);
+	) !default;
 
 // Palette.
 	$palette: (
@@ -44,4 +44,4 @@
 		accent4:			#e7b788,
 		accent5:			#8ea9e8,
 		accent6:			#87c5a4
-	);
+	) !default;

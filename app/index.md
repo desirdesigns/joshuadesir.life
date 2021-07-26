@@ -1,3 +1,4 @@
 ---
-layout: root
+title: Home
+layout: page
 ---

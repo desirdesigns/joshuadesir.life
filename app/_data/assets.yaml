@@ -1,5 +1,19 @@
 stylesheets:
   - ns: app
-    basePath:
+    basePath: /assets/styles/
     paths:
-      -
+      - globals.css
+      - main.css
+
+
+postscripts: 
+ - ns: forty
+   basePath: /assets/scripts/modules/forty/
+   paths:
+    - jquery.min.js
+    - breakpoints.min.js
+    - browser.min.js
+    - jquery.scrollex.min,js
+    - jquery.scrolly.min.js
+    - util.js
+    - main.js
