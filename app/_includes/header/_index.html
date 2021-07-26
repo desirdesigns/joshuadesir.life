@@ -1,10 +1,20 @@
+{% comment %}
+ id: header
+ type: partial
+ version: 11.11.11
+{% endcomment %}
 
+{% assign @headers = site.data.headers %}
+
+{% assign params = @headers.[page.header.name] %}
 
 <header id="header" class="alt">
-    <a href="index.html" class="logo"
-      ><strong>Forty</strong> <span>by HTML5 UP</span></a
-    >
-    <nav>
-      <a href="#menu">Menu</a>
-    </nav>
-  </header>
+  <a href="{{ params.title.url }}" class="logo"
+    >{{ params.title.text }}
+  <nav>
+    {% for link in params.links.links %}
+    <a class="hvr-{{ links.hoverEffect }}" href="{{ link.url }}">{{ link.name }}</a>
+    {% endfor %}
+    <a class="hvr-{{ links.hoverEffect }}" href="#menu">{{ links.menuName }}</a>
+  </nav>
+</header>

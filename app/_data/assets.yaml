@@ -13,7 +13,7 @@ postscripts:
     - jquery.min.js
     - breakpoints.min.js
     - browser.min.js
-    - jquery.scrollex.min,js
+    - jquery.scrollex.min.js
     - jquery.scrolly.min.js
     - util.js
     - main.js

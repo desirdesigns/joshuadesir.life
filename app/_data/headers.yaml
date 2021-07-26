@@ -1,0 +1,8 @@
+home:
+  title:
+    text: Joshuadesir.life
+  links:
+    links:
+      - name: About
+      - name: Work
+      - name: Contact

@@ -7,9 +7,13 @@
 {% assign title = "head/title.html" %}
 {% assign meta = "head/meta.html" %}
 {% assign stylesheets = "head/stylesheets.html" %}
+{% assign webfonts = "head/webfonts.html" %}
+{% assign icons = "head/icons.html" %}
 
 <head>
  {% include {{ title }} %}
  {% include {{ meta }} %}
  {% include {{ stylesheets }} %}
+ {% include {{ webfonts }} %}
+ {% include {{ icons }} %}
 </head>

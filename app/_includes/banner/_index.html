@@ -1,17 +1,30 @@
+{% comment %}
+ id: banner
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+
+{% assign @banners = site.data.banners %}
+
+{% assign params = @banners.[page.banner.name] %}
+
 <section id="banner" class="major">
     <div class="inner">
       <header class="major">
-        <h1>Hi, my name is Forty</h1>
+        <h1 class="{{ params.title.hoverEffect }}">{{ params.title.text }}</h1>
       </header>
-      <div class="content">
-        <p>
-          A responsive site template designed by HTML5 UP<br />
-          and released under the Creative Commons.
-        </p>
+
+      <div class="hvr-{{ params.content.hoverEffect }} content">
+        <p>{{ params.content.text }}</p>
+
         <ul class="actions">
+          
+           {% for action in params.actions.actions %}
           <li>
-            <a href="#one" class="button next scrolly">Get Started</a>
+            <a href="{{ action.url }}" class="button next scrolly">{{ action.name }}</a>
           </li>
+            {% endfor %}
         </ul>
       </div>
     </div>

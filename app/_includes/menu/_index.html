@@ -1,12 +1,32 @@
+{% comment %}
+ id: menu
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @menus = site.data.menus %}
+
+{% assign params = @menus.[page.menu.name] %}
+
 <nav id="menu">
+  
     <ul class="links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="landing.html">Landing</a></li>
-      <li><a href="generic.html">Generic</a></li>
-      <li><a href="elements.html">Elements</a></li>
+
+      {% for link in params.links.links %}
+      <li>
+        <a class="hvr-{{ params.links.hoverEffect }}" 
+           href="{{ link.url }}">{{ link.name }}</a>
+      </li>
+      {% endfor %}
+
     </ul>
+
     <ul class="actions stacked">
-      <li><a href="#" class="button primary fit">Get Started</a></li>
-      <li><a href="#" class="button fit">Log In</a></li>
+      {% for action in params.actions.actions %}
+      <li>
+        <a href="{{ action.url }}" class="button badge primary fit">{{ action.name }}</a>
+      </li>
+      {% endfor %}
+
     </ul>
   </nav>
