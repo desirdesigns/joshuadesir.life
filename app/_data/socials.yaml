@@ -4,3 +4,21 @@ socials:
     icon:
       id: twitter
       set: brands
+
+  - name: facebook
+    url: https://facebook.com/
+    icon:
+      id: facebook
+      set: brands
+
+  - name: linkedin
+    url: https://twitter.com/
+    icon:
+      id: linkedin
+      set: brands
+
+  - name: twitter
+    url: https://twitter.com/
+    icon:
+      id: twitter
+      set: brands

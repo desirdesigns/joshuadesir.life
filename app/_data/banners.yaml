@@ -1,4 +1,6 @@
 home:
+  backgroundImage:
+   source: /assets/images/banner.png
   title:
     text: Joshuadesir.life
   content:

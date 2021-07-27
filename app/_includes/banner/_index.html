@@ -9,9 +9,10 @@
 
 {% assign params = @banners.[page.banner.name] %}
 
-<section id="banner" style="background-image: url('/assets/images/banner.png');" class="major">
+<section id="banner" style="background-image: url('{{ params.backgroundImage.source }}');" class="major">
     <div class="inner">
       <header class="major">
+        <img class="avatar-xl" src="{{ params.logo.source }}"/>
         <h1 class="{{ params.title.hoverEffect }}">{{ params.title.text }}</h1>
       </header>
 

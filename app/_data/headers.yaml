@@ -2,7 +2,9 @@ home:
   title:
     text: Joshuadesir.life
   links:
+    hoverEffect: sweep-to-top
     links:
       - name: About
-      - name: Work
-      - name: Contact
+      - name: Services
+      - name: Portfolio
+      - name: Organizations
