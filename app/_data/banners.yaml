@@ -1,7 +1,9 @@
 home:
-  backgroundImage:
-   source: /assets/images/banner.png
   title:
     text: Joshuadesir.life
   content:
     text: a creative visual artist & creator.
+  backgroundImage:
+   source: /assets/images/banner.png
+  logo: 
+   source: /assets/images/logos/logo.png

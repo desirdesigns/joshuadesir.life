@@ -1,21 +1,30 @@
-<section id="two">
+{% comment %}
+ id: section
+ type: component
+ version: 11.11.11
+{% endcomment %}
+
+
+{% assign @sections = site.data.sections %}
+{% assign params = @sections.[page.sections.name] %}
+
+{% for section in params %}
+<section>
     <div class="inner">
       <header class="major">
-        <h2>Massa libero</h2>
+        <h2 class="{{ params.title.onHover }}">{{ params.title.text }}</h2>
       </header>
       <p>
-        Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-        libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-        Pellentesque condimentum sem. In efficitur ligula tate urna.
-        Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-        Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-        libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra
-        et feugiat tempus.
+        {{ params.description.text }}
       </p>
       <ul class="actions">
+        {% for action in params.actions.actions` %}
         <li>
-          <a href="landing.html" class="button next">Get Started</a>
+          <a href="{{ action.href }}" class="button next">{{ action.name }}</a>
         </li>
+        {% endfor %}
       </ul>
     </div>
 </section>
+
+{% endfor %}

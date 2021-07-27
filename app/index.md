@@ -10,4 +10,7 @@ banner:
 
 menu:
  name: home
+
+sections:
+ name: portfolio
 ---

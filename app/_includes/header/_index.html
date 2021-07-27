@@ -13,7 +13,7 @@
     >{{ params.title.text }}
   <nav>
     {% for link in params.links.links %}
-    <a class="hvr-{{ links.hoverEffect }}" href="{{ link.url }}">{{ link.name }}</a>
+    <a class="hvr-{{ link.hoverEffect }}" href="{{ link.url }}">{{ link.name }}</a>
     {% endfor %}
     <a class="hvr-{{ links.hoverEffect }}" href="#menu">{{ links.menuName }}</a>
   </nav>
