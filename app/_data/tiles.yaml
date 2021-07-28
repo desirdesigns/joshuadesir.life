@@ -1,2 +1,27 @@
 portfolio:
+  id: portfolio
+  onHover: bob
+  tiles:
   
+    - title:
+        text: E.R.A.T.I.
+      description:
+        text: Encouraging Resistance Against Tyranny & Insanity 
+
+    - title:
+        text: Inform & Inspire, LLC
+      description:
+        text: a 
+
+    - title:
+        text: E.R.A.T.I.
+      description:
+        text: a 
+    - title:
+        text: E.R.A.T.I.
+      description:
+        text: a 
+    - title:
+        text: E.R.A.T.I.
+      description:
+        text: a 

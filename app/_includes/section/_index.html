@@ -9,7 +9,7 @@
 {% assign params = @sections.[page.sections.name] %}
 
 {% for section in params %}
-<section>
+<section id="#{{ section.id }}">
     <div class="inner">
       <header class="major">
         <h2 class="{{ params.title.onHover }}">{{ params.title.text }}</h2>

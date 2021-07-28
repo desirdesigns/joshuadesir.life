@@ -1,2 +1,6 @@
 @import "./configs/";
 @import "./scrollbar";
+
+html {
+    scroll-behavior: smooth !important;
+  }

@@ -2,16 +2,22 @@ home:
   title:
     text: Joshuadesir.life
   links:
-    hoverEffect: sweep-to-top
+    fx:
+     hover: sweep-to-top
+     stagger: 5
+     menuName: Directory
     links:
       - name: About
-        href: "#about"
+        url: "#about"
 
       - name: Services
-        href: "#services"
+        url: "#services"
 
       - name: Portfolio
-        href: "#portfolio"
+        url: "#portfolio"
 
       - name: Organizations
-        href: "#organizations"
+        url: "#organizations"
+
+      - name: Contact
+        url: "#organizations"

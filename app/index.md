@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: page
+layout: landing
 
 header:
   name: home
@@ -9,8 +9,14 @@ banner:
   name: home
 
 menu:
- name: home
+  name: home
 
 sections:
- name: portfolio
+  name: about
+
+tiles:
+  name: portfolio
+
+contact:
+  name: me
 ---

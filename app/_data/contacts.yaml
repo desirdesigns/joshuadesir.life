@@ -1,0 +1,14 @@
+me:
+  methods:
+    methods:
+      - name: Phone
+        data: 678-000-000
+        icon:
+          id: phone
+          set: solid
+
+      - name: Email
+        data: joshuadesir.life
+        icon:
+          id: mail
+          set: solid

@@ -7,14 +7,13 @@
 {% assign @headers = site.data.headers %}
 
 {% assign params = @headers.[page.header.name] %}
-
 <header id="header" class="alt">
-  <a href="{{ params.title.url }}" class="logo"
-    >{{ params.title.text }}
-  <nav>
+  <a href="{{ params.title.url }}" class="logo">{{ params.title.text }}</a>
+  
+  <nav xyz="stagger-{{ params.links.fx.stagger }} fade" >
     {% for link in params.links.links %}
-    <a class="hvr-{{ link.hoverEffect }}" href="{{ link.url }}">{{ link.name }}</a>
+    <a class="hvr-{{ params.links.fx.hover }} xyz-in" href="{{ link.url }}">{{ link.name }}</a>
     {% endfor %}
-    <a class="hvr-{{ links.hoverEffect }}" href="#menu">{{ links.menuName }}</a>
+    <a href="#menu">{{ links.menuName }}</a>
   </nav>
 </header>

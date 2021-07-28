@@ -1,4 +1,10 @@
 stylesheets:
+
+  - ns: externals
+    basePath: https://
+    paths:
+      - cdn.jsdelivr.net/npm/@animxyz/core
+      
   - ns: app
     basePath: /assets/styles/
     paths:

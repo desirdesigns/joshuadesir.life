@@ -1,24 +1,30 @@
 socials:
   - name: twitter
-    url: https://twitter.com/
+    url: https://twitter.com/joshuadesir/
     icon:
       id: twitter
       set: brands
 
   - name: facebook
-    url: https://facebook.com/
+    url: https://facebook.com/joshuadesir/
     icon:
       id: facebook
       set: brands
 
   - name: linkedin
-    url: https://twitter.com/
+    url: https://linkedin.com/
     icon:
       id: linkedin
       set: brands
-
-  - name: twitter
-    url: https://twitter.com/
+      
+  - name: paypal
+    url: https://paypal.com/informandinspire
     icon:
-      id: twitter
+      id: paypal
       set: brands
+
+  - name: kofi
+    url: https://ko-fi.com/joshuadesir/
+    icon:
+      id: coffee
+      set: solid

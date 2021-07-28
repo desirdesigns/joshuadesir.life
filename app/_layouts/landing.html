@@ -3,10 +3,12 @@ layout: page
 ---
 
 {% assign section = "section/_index.html" %}
-{% assign tiles = "tiles/_index" %}
+{% assign tiles = "tiles/_index.html" %}
 
-{{ content }}
 
 {% include {{ section }} %}
 
 {% include {{ tiles }} %}
+
+{{ content }}
+

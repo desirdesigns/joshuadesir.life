@@ -3,7 +3,10 @@ layout: root
 ---
 
 {% assign footer = "footer/_index.html" %}
+{% assign contact = "contact/_index.html" %}
 
 {{ content }}
+
+{% include {{ contact }} %}
 
 {% include {{ footer }} %}
