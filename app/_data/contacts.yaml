@@ -1,4 +1,5 @@
 me:
+  id: contact
   methods:
     methods:
       - name: Phone
@@ -8,7 +9,13 @@ me:
           set: solid
 
       - name: Email
-        data: joshuadesir.life
+        data: i@joshuadesir.life | joshuaddesir@pm.me
         icon:
-          id: mail
+          id: at
           set: solid
+
+      - name: Community
+        data: [yggdrasil.lyoko.life/joshuadesir]
+        icon:
+          id: google
+          set: brands

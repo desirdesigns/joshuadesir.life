@@ -1,4 +1,17 @@
 socials:
+
+  - name: youtube
+    url: https://youtube.com/joshuadesir/
+    icon:
+      id: youtube
+      set: brands
+
+  - name: instagram
+    url: https://instagram.com/joshuadesir/
+    icon:
+      id: instagram
+      set: brands
+
   - name: twitter
     url: https://twitter.com/joshuadesir/
     icon:
@@ -28,3 +41,9 @@ socials:
     icon:
       id: coffee
       set: solid
+
+  - name: bitcoin
+    url: https://crypto.com/joshuadesir/
+    icon:
+      id: bitcoin
+      set: brands

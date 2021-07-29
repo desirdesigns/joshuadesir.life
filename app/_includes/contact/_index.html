@@ -8,7 +8,7 @@
 
 {% assign params = @contacts.[page.contact.name] %}
 
-<section id="contact">
+<section id="{{ params.id }}">
   <div class="inner">
     <section>
       <form method="post" action="alert('Message Processing!')">

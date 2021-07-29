@@ -7,3 +7,10 @@ icons:
   - 144x144
   - 152x152
   - 180x180
+
+
+plugins:
+  - repo: https://github.com/pathawks/liquid-md5
+  - repo: https://github.com/gildesmarais/jekyll-loading-lazy
+  - repo: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/installation.md
+  

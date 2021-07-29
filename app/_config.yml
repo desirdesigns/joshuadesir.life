@@ -7,3 +7,6 @@ sass:
 
 plugins:
   - jekyll-feed
+  - liquid-md5
+  - jekyll-loading-lazy
+  - jekyll-seo-tag

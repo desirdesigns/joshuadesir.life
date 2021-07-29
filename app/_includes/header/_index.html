@@ -10,9 +10,9 @@
 <header id="header" class="alt">
   <a href="{{ params.title.url }}" class="logo">{{ params.title.text }}</a>
   
-  <nav xyz="stagger-{{ params.links.fx.stagger }} fade" >
+  <nav  xyz="stagger-{{ params.links.fx.stagger }} fade" >
     {% for link in params.links.links %}
-    <a class="hvr-{{ params.links.fx.hover }} xyz-in" href="{{ link.url }}">{{ link.name }}</a>
+    <a class="hide-xs hide-sm hide-md hvr-{{ params.links.fx.hover }} xyz-in" href="{{ link.url }}">{{ link.name }}</a>
     {% endfor %}
     <a href="#menu">{{ links.menuName }}</a>
   </nav>

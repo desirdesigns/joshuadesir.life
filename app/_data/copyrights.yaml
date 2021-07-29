@@ -1,5 +1,10 @@
 hoverEffect: sweep-to-top
 lines:
-  - "&copy; 2021, Joshuadesir.life"
-  - Made w/ A E S T H E T I C
-  - MIT License
+  - text: "&copy; 2021, Joshuadesir.life"
+    url: /
+
+  - text: Preblessed
+  - text: Made w/ A E S T H E T I C
+
+  - text: MIT License
+    url: https://github.com/joshuadesir/#README
