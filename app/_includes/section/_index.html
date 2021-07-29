@@ -8,14 +8,14 @@
 {% assign @sections = site.data.sections %}
 {% assign params = @sections.[page.sections.name] %}
 
-{% for section in params %}
-<section id="#{{ section.id }}">
+{% for section in params.sections %}
+<section id="{{ params.id }}">
     <div class="inner">
       <header class="major">
-        <h2 class="{{ params.title.onHover }}">{{ params.title.text }}</h2>
+        <h2 class="{{ section.title.onHover }}">{{ section.title.text }}</h2>
       </header>
       <p>
-        {{ params.description.text }}
+        {{ section.description.text }}
       </p>
       <ul class="actions">
         {% for action in params.actions.actions` %}

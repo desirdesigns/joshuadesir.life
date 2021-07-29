@@ -1,4 +1,7 @@
 about:
   id: about
-  title:
-    text: I Am
+  sections:
+    - title:
+        text: Who I Am...
+      description:
+        text: I have spent my entire life mastering my A E S T H E T I C.
