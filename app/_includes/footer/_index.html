@@ -15,7 +15,7 @@
 
       {% for social in @socials.socials %}
       <li>
-        <a href="{{ social.url }}" class="icon {{ social.icon.set }} alt fa-{{ social.icon.id }}">
+        <a href="{{ social.url }}" data-tooltip="{{ social.name }}" class="hvr-{{ @socials.hoverEffect }} tooltip icon {{ social.icon.set }} alt fa-{{ social.icon.id }}">
           <span class="label">{{ social.name }}</span>
         </a>
       </li>
