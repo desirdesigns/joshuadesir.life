@@ -2,26 +2,37 @@ portfolio:
   id: portfolio
   onHover: bob
   tiles:
-  
     - title:
-        text: E.R.A.T.I.
+        text: Cafe
       description:
-        text: Encouraging Resistance Against Tyranny & Insanity 
+        text:
+      image:
+        source: /assets/images/collections/portfolio/cafe.png
 
     - title:
-        text: Inform & Inspire, LLC
+        text: Cityscape
       description:
-        text: a 
+        text:
+      image:
+        source: /assets/images/collections/portfolio/cityscape.png
 
     - title:
-        text: E.R.A.T.I.
+        text: Lightpost
       description:
-        text: a 
+        text:
+      image:
+        source: /assets/images/collections/portfolio/lightpost.png
+
     - title:
-        text: E.R.A.T.I.
+        text: Moby
       description:
-        text: a 
+        text:
+      image:
+        source: /assets/images/collections/portfolio/moby.png
+
     - title:
-        text: E.R.A.T.I.
+        text: Path
       description:
-        text: a 
+        text:
+      image:
+        source: /assets/images/collections/portfolio/path.png

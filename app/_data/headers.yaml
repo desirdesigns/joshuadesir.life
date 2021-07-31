@@ -3,21 +3,21 @@ home:
     text: Joshuadesir.life
   links:
     fx:
-     hover: sweep-to-top
-     stagger: 5
-     menuName: Directory
+      hover: sweep-to-top
+      stagger: 4
+      menuName: Directory
     links:
       - name: About
         url: "#about"
-
-      - name: Services
-        url: "#services"
 
       - name: Portfolio
         url: "#portfolio"
 
       - name: Organizations
         url: "#organizations"
+
+      - name: Services
+        url: "#services"
 
       - name: Contact
         url: "#contact"

@@ -5,3 +5,12 @@ about:
         text: Who I Am...
       description:
         text: I have spent my entire life mastering my A E S T H E T I C.
+
+    - id: organizations
+      title:
+        text: What I Do...
+      description:
+      actions:
+        actions:
+          - name: E.R.A.T.I
+          - name: Inform & Inspire, LLC
