@@ -40,7 +40,11 @@
         <div class="contact-method">
           <span class="icon {{ method.icon.set }} alt fa-{{ method.icon.id }}"></span>
           <h3>{{ method.name }}</h3>
-          <a href="{{ method.url }}">{{ method.data }}</a>
+          <ul class="icons">
+           {% for link in method.links %}
+           <li>{{ link.name }}</li>
+           {% endfor %}
+          </ul>
         </div>
       </section>
       {% endfor %}

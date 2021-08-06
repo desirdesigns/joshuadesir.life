@@ -8,7 +8,8 @@ portfolio:
         text:
       image:
         source: /assets/images/collections/portfolio/cafe.png
-
+      url: /cafe/
+      
     - title:
         text: Cityscape
       description:

@@ -2,8 +2,12 @@ me:
   id: contact
   methods:
     methods:
-      - name: Phone
-        data: 678-000-000
+      - name: Intentions
+        links: 
+           - name: Picto gram
+             icon: 
+               id: phone
+               set: solid
         icon:
           id: phone
           set: solid

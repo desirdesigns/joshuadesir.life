@@ -22,6 +22,6 @@ home:
 
       - name: Support
         url: /support/
-        
-      - name: BANNED Info
 
+      - name: BANNED Info
+        url: /banned/

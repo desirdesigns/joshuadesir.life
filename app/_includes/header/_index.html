@@ -14,7 +14,7 @@
   
   <nav  xyz="stagger-{{ params.links.fx.stagger }} fade" >
     {% for link in params.links.links %}
-    <a class="hide-xs hide-sm hide-md hvr-{{ params.links.fx.hover }} xyz-in" href="{{ link.url }}">{{ link.name }}</a>
+    <a data-badge="0" class="badge hide-xs hide-sm hide-md hvr-{{ params.links.fx.hover }} xyz-in" href="{{ link.url }}">{{ link.name }}</a>
     {% endfor %}
 
    
