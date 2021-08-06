@@ -1,11 +1,6 @@
-// Core variables
-$version: "0.5.9";
-
-// Core features
-$rtl: false;
 
 // Core colors
-$primary-color: #ffffff;
+$primary-color: #eaeaea;
 $primary-color-dark: darken($primary-color, 3%);
 $primary-color-light: lighten($primary-color, 3%);
 $secondary-color: lighten($primary-color, 37.5%);
@@ -27,9 +22,9 @@ $bg-color-dark: darken($bg-color, 3%);
 $bg-color-light: $light-color;
 
 // Control colors
-$success-color: #32b643;
-$warning-color: #ffb700;
-$error-color: #e85600;
+$success-color: #10771e;
+$warning-color: #b38510;
+$error-color: #a53e03;
 
 // Other colors
 $code-color: #d73e48;
@@ -74,8 +69,8 @@ $unit-12: 2.4rem;
 $unit-16: 3.2rem;
 
 // Font sizes
-$html-font-size: 20px;
-$html-line-height: 1.5;
+$html-font-size: 22px;
+$html-line-height: 1.3;
 $font-size: 0.8rem;
 $font-size-sm: 0.7rem;
 $font-size-lg: 0.9rem;

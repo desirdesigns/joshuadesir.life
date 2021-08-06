@@ -1,2 +1,16 @@
 ---
 ---
+
+:root {
+    --font-excelsius-sans: "Excelcius Sans", system-ui, monospace;
+
+    // [assignment]: Fonts
+    --primary-font: var(--font-excelsius-sans);
+    --secondary-font: var(--font-excelsius-sans);
+    --teritary-font: var(--font-excelsius-sans);
+
+    --color-light-white: #FFFFFF;
+
+    // [assignment]: Colors
+    --primary-text-color: var(--color-light-white);
+}
