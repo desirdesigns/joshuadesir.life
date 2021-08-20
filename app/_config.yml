@@ -9,4 +9,5 @@ plugins:
   - jekyll-feed
   - liquid-md5
   - jekyll-loading-lazy
+  - jekyll-pdf-embed
   - jekyll-seo-tag

@@ -4,8 +4,25 @@ layout: root
 
 {% assign footer = "footer/_index.html" %}
 {% assign contact = "contact/_index.html" %}
+{% assign head = "head/_index.html" %}
+{% assign header = "header/_index.html" %}
+{% assign menu = "menu/_index.html" %}
+{% assign banner = "banner/_index.html" %}
+{% assign postscripts = "postscripts/_index.html" %}
 
-{{ content }}
+      
+{% include {{ header }} %}
+
+{% include {{ menu }} %}
+
+{% include {{ banner }} %}
+
+ <div id="main">
+
+   {{ content }}
+  
+</div>
+
 
 {% include {{ contact }} %}
 
