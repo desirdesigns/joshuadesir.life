@@ -7,19 +7,19 @@ socials:
       id: youtube
       set: brands
 
-  - name: instagram
+  - name: "@joshuadesir"
     url: https://instagram.com/joshuadesir/
     icon:
       id: instagram
       set: brands
 
-  - name: twitter
+  - name: "@joshuadesir"
     url: https://twitter.com/joshuadesir/
     icon:
       id: twitter
       set: brands
 
-  - name: facebook
+  - name: "@joshuadesir"
     url: https://facebook.com/joshuadesir/
     icon:
       id: facebook
@@ -31,19 +31,19 @@ socials:
       id: linkedin
       set: brands
       
-  - name: paypal
+  - name: "@informandinspire"
     url: https://paypal.com/informandinspire
     icon:
       id: paypal
       set: brands
 
-  - name: kofi
+  - name: "@joshuadesir"
     url: https://ko-fi.com/joshuadesir/
     icon:
       id: coffee
       set: solid
 
-  - name: bitcoin
+  - name: "@joshuadesir"
     url: https://crypto.com/joshuadesir/
     icon:
       id: bitcoin
