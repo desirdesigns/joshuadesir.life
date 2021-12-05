@@ -1,24 +1,22 @@
 {
   "name": "joshuadesir.life",
-  "version": "4.3.4",
-  "description": "a portfolio & organization kit for a creative designer to inform & inspire with.",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "readme:g": "npx @appnest/readme generate"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jffrydsr/joshuadesir.life.git"
+    "url": "git+https://github.com/jeffreydesir/joshuadesir.life.git"
   },
-  "author": "Joshua Desir",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jffrydsr/joshuadesir.life/issues"
+    "url": "https://github.com/jeffreydesir/joshuadesir.life/issues"
   },
-  "homepage": "https://github.com/jffrydsr/joshuadesir.life#readme",
-  "dependencies": {
-    "@appnest/readme": "^1.2.7"
-  }
+  "homepage": "https://github.com/jeffreydesir/joshuadesir.life#readme"
 }

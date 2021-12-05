@@ -1,19 +1,7 @@
-{% comment %} 
- id: head
- type: partial
- version: 11.11.11
-{% endcomment %}
-
-{% assign title = "head/title.html" %}
-{% assign meta = "head/meta.html" %}
-{% assign stylesheets = "head/stylesheets.html" %}
-{% assign webfonts = "head/webfonts.html" %}
-{% assign icons = "head/icons.html" %}
-
 <head>
- {% include {{ title }} %}
- {% include {{ meta }} %}
- {% include {{ stylesheets }} %}
- {% include {{ webfonts }} %}
- {% include {{ icons }} %}
+    <title>Multiverse by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
