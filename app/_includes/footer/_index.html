@@ -1,31 +1,48 @@
+{% comment %}
+ id: footer
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @footers = site.data.footers %}
+{% assign NAME = page.footer.name %}
+
+{% if NAME %}
+ {% assign _params_ = @footers[NAME] %} 
+
+{% endif %}
+
 <footer id="footer" class="panel">
     <div class="inner split">
         <div>
             <section>
-                <h2>Magna feugiat sed adipiscing</h2>
-                <p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum
-                    eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu
-                    bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor
-                    tincidunt erat, et scelerisque turpis ipsum.</p>
+                {% assign @section = PARAMS.section %}
+                <h2>{{ section.title }}</h2>
+                <p>{{ section.description }}</p>
             </section>
+
             <section>
-                <h2>Follow me on ...</h2>
+                {% assign @socials = PARAMS.socials %}
+                <h2>{{ @socials.title }}</h2>
                 <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+                    {% for icon in @socials.icons %}
+                    <li>
+                     <a href="{{ icon.link }}" 
+                        class="icon brands fa-{{ icon.name }}">
+                       <span class="label">{{ icon.name }}</span>
+                    </a>
                     </li>
-                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-                    </li>
-                    <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </section>
+
             <p class="copyright">
+                {% assign @copyright = PARAMS %}
                 &copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
             </p>
         </div>
+
+
         <div>
             <section>
                 <h2>Get in touch</h2>

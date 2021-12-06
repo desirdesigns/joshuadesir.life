@@ -16,11 +16,12 @@
 {% for item in _params_ %}
 <article class="thumb">
     
-    <a href="{{ item.image }}" style="background-image: url('{{ item.image }}')" class="image">
-     <img src="{{ item.image }}" alt="{{ item.title | lowercase }}" />
+    <a href="/assets/images/projects/{{ item.title | downcase }}/{{ item.title | downcase }}.png" style="background-image: url('/assets/images/projects/{{ item.title | downcase }}/{{ item.title | downcase }}.png')" class="image">
+     <img src="{{ item.title | downcase }}" alt="{{ item.title | downcase }}" />
     </a>
 
     <h2>{{ item.title }}</h2>
-    <p>{{ item.description }} </p>
+    <p>{{ item.description }}</p>
+    <b>{{ item.tags }}</b>
 </article>
 {% endfor %}

@@ -1,8 +1,11 @@
+meta: 
+ basePath: 
 projects: 
  - title: Native Woman
    description: an illustration of Native American Woman.
    tags: [illustration]
-   image: /assets/images/projects/native woman/native-woman--full.png
+   image: /assets/images/projects/native woman/native woman.png
+
  - title: Yonder
    image: /assets/images/projects/native woman/native-woman--full.png
 
