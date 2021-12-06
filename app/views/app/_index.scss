@@ -3,7 +3,6 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'fontawesome-all.min.css';
 
 	@include breakpoints((
 		xlarge:  ( 1281px,  1680px ),
@@ -30,6 +29,7 @@
 	@import 'base/reset';
 	@import 'base/page';
 	@import 'base/typography';
+	@import 'base/scrollbar';
 
 // Component.
 

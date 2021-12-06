@@ -1,5 +1,16 @@
-stylesheets: 
+stylesheets:
   - module: app
     basePath: /assets/styles/
-    paths: 
+    paths:
       - main.css
+
+postscripts:
+  - module: app
+    basePath: /assets/scripts/app/
+    paths:
+      - jquery.min.js
+      - jquery.poptrox.min.js
+      - breakpoints.min.js
+      - browser.min.js
+      - util.js
+      - main.js

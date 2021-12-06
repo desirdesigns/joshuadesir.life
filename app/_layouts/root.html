@@ -10,6 +10,7 @@
 {% assign head = "head/_index.html" %}
 {% assign header = "header/_index.html" %}
 {% assign postscripts = "postscripts/_index.html" %}
+{% assign footer = "footer/_index.html" %}
 
 <!DOCTYPE HTML>
 <html>
@@ -27,6 +28,8 @@
      {{ content }}
 			
 	</div>
+
+	{% include {{ footer }} %}
 
     {% include {{ postscripts }} %}
 
