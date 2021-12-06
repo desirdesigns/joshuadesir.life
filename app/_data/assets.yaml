@@ -1,0 +1,5 @@
+stylesheets: 
+  - module: app
+    basePath: /assets/styles/
+    paths: 
+      - main.css

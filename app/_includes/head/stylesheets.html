@@ -1,0 +1,14 @@
+{% comment %}
+ id: stylesheets.head
+ type: element 
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @stylesheets = site.data.assets.stylesheets %}
+
+{% for module in @stylesheets %}
+ {% assign basePath = module.basePath %}
+ {% for path in module.paths %}
+  <link rel="stylesheet" href="{{ basePath }}{{ path }}" />
+{% endfor %}
+{% endfor %}
