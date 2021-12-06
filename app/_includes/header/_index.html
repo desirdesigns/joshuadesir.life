@@ -1,8 +1,32 @@
+{% comment %}
+ id: header
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @headers = site.data.headers %}
+{% assign NAME = page.header.name %}
+
+{% if NAME %}
+ {% assign _params_ = @headers[NAME] %}
+ {% else %}
+ {% assign _params_ = page.header.data %}
+{% endif %}
+
 <header id="header">
-    <h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
-    <nav>
+    <h1>
+     <a href="{{ _params_.title.link }}"><strong>{{ _params_.title.text }}</strong></a> 
+        
+     <nav>
         <ul>
-            <li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
+            <a href="#footer" class="icon solid fa-info-circle">Menu</a>
+
+            {% for link in _params_.navigation.link %}
+            
+         <li>
+             <a href="#footer" class="icon solid fa-info-circle">{{ link.name }}</a>
+         </li>
+         {% endfor %}
         </ul>
     </nav>
 </header>

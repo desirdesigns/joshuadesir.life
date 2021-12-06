@@ -33,7 +33,7 @@
 				minHeight:	18em
 			)
 		)
-	);
+	) !default;
 
 // Duration.
 	$duration: (
@@ -42,14 +42,14 @@
 		panel:				0.5s,
 		modal:				0.5s,
 		thumb:				0.15s
-	);
+	) !default;
 
 // Size.
 	$size: (
 		element-height:		2.75em,
 		element-margin:		2em,
 		header:				4em
-	);
+	) !default;
 
 // Font.
 	$font: (
@@ -60,7 +60,7 @@
 		weight-extrabold:	400,
 		kerning:			0.025em,
 		kerning-alt:		0.1em
-	);
+	) !default;
 
 // Palette.
 	$palette: (
@@ -78,4 +78,4 @@
 		border-bg:			#34363b,
 		border-bg-alt:		#44464b,
 		accent1:			#34a58e
-	);
+	) !default;
