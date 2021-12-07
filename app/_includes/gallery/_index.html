@@ -13,11 +13,11 @@
  {% assign _params_ = page.gallery.data %}
 {% endif %}
 
-{% for item in _params_ %}
+{% for item in _params_.data %}
 <article class="thumb">
     
     <a href="/assets/images/projects/{{ item.title | downcase }}/{{ item.title | downcase }}.png" style="background-image: url('/assets/images/projects/{{ item.title | downcase }}/{{ item.title | downcase }}.png')" class="image">
-     <img src="{{ item.title | downcase }}" alt="{{ item.title | downcase }}" />
+     <img src="/assets/images/projects/{{ item.title | downcase }}/{{ item.title | downcase }}.png" alt="{{ item.title | downcase }}" />
     </a>
 
     <h2>{{ item.title }}</h2>
