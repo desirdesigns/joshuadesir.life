@@ -6,13 +6,13 @@
 
 ::-webkit-scrollbar
 {
-	width: 10px;
-	background-color: #F5F5F5;
+	width: 15px;
+	background-color: #000000;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #F90;	
+	background-color: rgb(1, 47, 146);	
 	background-image: -webkit-linear-gradient(45deg,
 	                                          rgba(255, 255, 255, .2) 25%,
 											  transparent 25%,

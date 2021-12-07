@@ -1,4 +1,7 @@
 projects:
+  props: 
+   basePath: /assets/images/projects/
+   images:
   data:
     - title: Native Woman
       description: an illustration of Native American Woman.
@@ -11,4 +14,3 @@ projects:
     - title: James Franco
     - title: The Ocean Wide
     - title: Myrtle Beach Sunset
-    - title: Allure

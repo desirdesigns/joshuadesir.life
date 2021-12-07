@@ -8,10 +8,12 @@
 {% assign stylesheets = "head/stylesheets.html" %}
 {% assign meta = "head/meta.html" %}
 {% assign webfonts = "head/webfonts.html" %}
+{% assign icons = "head/icons.html" %}
 
 <head>
  {% include {{ title }} %}
- {% include {{ stylesheets }} %}
  {% include {{ meta }} %}
+ {% include {{ icons }} %}
+ {% include {{ stylesheets }} %}
  {% include {{ webfonts }} %}
 </head>
