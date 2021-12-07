@@ -1,0 +1,4 @@
+- module: optimizers
+  plugins:
+    - id: jekyll-loading-lazy
+      repo: https://github.com/gildesmarais/jekyll-loading-lazy
