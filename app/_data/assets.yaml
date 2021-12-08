@@ -3,6 +3,7 @@ stylesheets:
     basePath: /assets/styles/
     paths:
       - main.css
+      - globals.css
 
 postscripts:
   - module: app

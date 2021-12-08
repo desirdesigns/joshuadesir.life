@@ -9,7 +9,8 @@
 {% assign @ext = @icons.props.ext %}
 
 {% for icon in @icons.data %}
- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
  <link rel="apple-touch-icon" href="{{ icon }}" />
- <link rel="apple-touch-icon" sizes="57x57" href="{{ @basePath }}{{ icon }}{{ @ext }}" />
+ <link rel="android-chrome" sizes="{{ icon }}" href="{{ @basePath }}{{ icon }}{{ @ext }}" />
+ <link rel="icon shortcut" sizes="{{ icon }}" href="{{ @basePath }}{{ icon }}{{ @ext }}" />
+ <link rel="apple-touch-icon" sizes="{{ icon }}" href="{{ @basePath }}{{ icon }}{{ @ext }}" />
 {% endfor %}

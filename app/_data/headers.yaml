@@ -3,3 +3,4 @@ default:
     text: Joshuadesir.life
   navigation: 
     links:
+     - name: home

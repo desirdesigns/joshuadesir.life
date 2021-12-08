@@ -15,18 +15,23 @@
 
 <header id="header">
     <h1>
-     <a href="{{ _params_.title.link }}"><strong>{{ _params_.title.text }}</strong></a> 
+     <a href="{{ _params_.title.link }}">
+         <strong>{{ _params_.title.text }}</strong>
+    </a> 
         
      <nav>
         <ul>
-            <a href="#footer" class="icon solid fa-info-circle">Menu</a>
+           
 
-            {% for link in _params_.navigation.link %}
-            
+            {% for link in _params_.navigation.links %}
          <li>
-             <a href="#footer" class="icon solid fa-info-circle">{{ link.name }}</a>
+             <a href="{{ link.href }}" class="icon">{{ link.name }}</a>
          </li>
          {% endfor %}
+
+         <li>
+            <a href="#footer" class="icon solid fa-info-circle">Menu</a>
+        </li>
         </ul>
     </nav>
 </header>

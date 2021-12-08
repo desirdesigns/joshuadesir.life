@@ -1,16 +1,16 @@
 title: Joshuadesir.life
-copyright: 2021 - 2022 Joshua Desir 
-description: 
+copyright: 2021 - 2022 Joshua Desir
+description:
 icons:
   props:
     basePath: /assets/icons/
-    ext: .png 
-  data: 
-     - 57x57
-     - 72x72
-     - 76x76
-     - 114x114 
-     - 120x120
-     - 144x144 
-     - 152x152
-     - 180x180
+    ext: .png
+  data:
+    - 57x57
+    - 72x72
+    - 76x76
+    - 114x114
+    - 120x120
+    - 144x144
+    - 152x152
+    - 180x180

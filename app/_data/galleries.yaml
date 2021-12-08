@@ -1,10 +1,11 @@
 projects:
-  props: 
-   basePath: /assets/images/projects/
-   images:
+  props:
+    basePath: /assets/images/projects/
+    images:
   data:
     - title: Native Woman
       description: an illustration of Native American Woman.
+      type: lightbox
       tags: [illustration]
 
     - title: Yonder
@@ -14,3 +15,7 @@ projects:
     - title: James Franco
     - title: The Ocean Wide
     - title: Myrtle Beach Sunset
+
+default:
+  data:
+    - title: Test
