@@ -1,0 +1,7 @@
+hover: 
+ links: 
+  headings:  bounce-to-top
+
+animXYZ: 
+ links: 
+  headings: fade stagger-9 skew-right-6 

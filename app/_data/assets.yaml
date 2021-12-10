@@ -5,6 +5,11 @@ stylesheets:
       - main.css
       - globals.css
 
+  - module: externals
+    basePath: https://
+    paths:
+      - cdn.jsdelivr.net/npm/@animxyz/core
+
 postscripts:
   - module: app
     basePath: /assets/scripts/app/
@@ -16,5 +21,4 @@ postscripts:
       - util.js
       - main.js
 
-
-webfonts: 
+webfonts:

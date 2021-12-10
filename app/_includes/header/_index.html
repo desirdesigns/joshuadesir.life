@@ -4,6 +4,10 @@
  version: 11.11.11
 {% endcomment %}
 
+{% assign @animations = site.data.configs.animation %}
+{% assign @hover = @animations.hover %}
+{% assign @animXYZ = @animations.animXYZ %}
+
 {% assign @headers = site.data.headers %}
 {% assign NAME = page.header.name %}
 
@@ -16,21 +20,33 @@
 <header id="header">
     <h1>
      <a href="{{ _params_.title.link }}">
-         <strong>{{ _params_.title.text }}</strong>
+         
+         <strong><img src="{{ _params_.logo.source }}" width="50%" height="50%" alt="/>"</strong>
     </a> 
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">Settings</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">Change avatar</a>
+        </li>
+      </ul>
+     <nav class="hide-xs hide-sm">
+
         
-     <nav>
-        <ul>
-           
+        <ul xyz="{{ @animXYZ.links.headings }}">
 
             {% for link in _params_.navigation.links %}
-         <li>
-             <a href="{{ link.href }}" class="icon">{{ link.name }}</a>
+         <li data-type="iterable" class="xyz-in">
+             <a href="{{ link.href }}" class="hvr-{{ @hover.links.headings }} icon"><i class="{{ link.icon.set }} {{ link.icon.name }}"></i>{{ link.name }}</a>
          </li>
          {% endfor %}
 
          <li>
-            <a href="#footer" class="icon solid fa-info-circle">Menu</a>
+            <a href="#footer" class="icon solid far fa-compass"></a>
         </li>
         </ul>
     </nav>

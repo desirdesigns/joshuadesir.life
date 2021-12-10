@@ -1,6 +1,31 @@
-default: 
+default:
+  logo:
+    source: /assets/images/logo.png
   title:
     text: Joshuadesir.life
-  navigation: 
+  navigation:
     links:
-     - name: home
+      - name: Me
+        icon:
+          set: far
+          name: fa-eye
+
+      - name: Services
+        icon:
+          set: fas
+          name: fa-layer-group
+
+      - name: Abilities
+        icon:
+          set: fas
+          name: fa-magic
+
+      - name: Work
+        icon:
+          set: fas
+          name: fa-drafting-compass
+
+      - name: Contact
+        icon:
+          set: fas
+          name: fa-pen-fancy

@@ -1,3 +1,12 @@
 ---
 ---
 
+:root {
+    --color-primary: '';
+    --font-primary: 'Poppins', monospace;
+}
+
+
+body {
+    font-family: var(--font-primary) !important;
+}
