@@ -28,7 +28,7 @@
         <ul class="" xyz="{{ @animXYZ.links.headings }}">
 
             {% for link in _params_.navigation.links %}
-         <li data-type="iterable" class=" xyz-in">
+         <li data-type="iterable" class="hide-xs hide-sm hide-md xyz-in">
              <a href="{{ link.href }}" class="hvr-{{ @hover.links.headings }} icon"><i class="{{ link.icon.set }} {{ link.icon.name }}"></i>{{ link.name }}</a>
          </li>
          {% endfor %}

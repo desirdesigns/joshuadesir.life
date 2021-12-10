@@ -27,9 +27,9 @@ $misc: (
             minHeight:	18em
         ),
         xsmall:			(
-            rows:		3,
-            columns:	3,
-            pad:		0.3,
+            rows:		2,
+            columns:	2,
+            pad:		0.2,
             minHeight:	15em
         )
     )
@@ -37,8 +37,8 @@ $misc: (
 
 // Duration.
 $duration: (
-    transition:			0.2s,
-    header:				1s,
+    transition:			0.3s,
+    header:				1.2s,
     panel:				0.5s,
     modal:				0.5s,
     thumb:				0.15s
@@ -46,9 +46,9 @@ $duration: (
 
 // Size.
 $size: (
-    element-height:		2.75em,
+    element-height:		2.55em,
     element-margin:		2em,
-    header:				4em
+    header:				4.2em
 );
 
 // Font.
