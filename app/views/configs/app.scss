@@ -5,8 +5,8 @@ $misc: (
         default:		(
             rows:		3,
             columns:	3,
-            pad:		0.7,
-            minHeight:	25em
+            pad:		0.5,
+            minHeight:	22em
         ),
         xlarge:			(
             rows:		2,
@@ -27,10 +27,10 @@ $misc: (
             minHeight:	18em
         ),
         xsmall:			(
-            rows:		2,
-            columns:	1,
-            pad:		0.5,
-            minHeight:	18em
+            rows:		3,
+            columns:	3,
+            pad:		0.3,
+            minHeight:	15em
         )
     )
 );
@@ -53,7 +53,7 @@ $size: (
 
 // Font.
 $font: (
-    family:				('Source Sans Pro', Helvetica, sans-serif),
+    family:				('Poppins', Helvetica, sans-serif),
     family-fixed:		('Courier New', monospace),
     weight:				300,
     weight-bold:		300,
@@ -70,12 +70,12 @@ $palette: (
     bg-overlay-alt:		transparentize(#242629, 0.5),
     bg-ie-overlay:		transparentize(#242629, 0.45),
     bg-ie-overlay-alt:	transparentize(#242629, 0.2),
-    fg:					#a0a0a1,
+    fg:					#ffffff,
     fg-bold:			#ffffff,
     fg-medium:			#707071,
-    fg-light:			#505051,
+    fg-light:			#ffffff,
     border:				#36383c,
     border-bg:			#34363b,
     border-bg-alt:		#44464b,
-    accent1:			#34a58e
+    accent1:			#4534a5
 );

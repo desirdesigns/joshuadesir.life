@@ -4,12 +4,14 @@
  version: 11.11.11
 {% endcomment %}
 
+{% assign @socials = site.data.configs.meta.socials %}
+
 {% assign @footers = site.data.footers %}
 {% assign NAME = page.footer.name %}
 
 {% if NAME %}
  {% assign _params_ = @footers[NAME] %} 
-
+ 
 {% endif %}
 
 <footer id="footer" class="panel">

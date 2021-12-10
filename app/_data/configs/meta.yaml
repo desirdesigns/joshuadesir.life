@@ -1,6 +1,12 @@
 title: Joshuadesir.life
 copyright: 2021 - 2022 Joshua Desir
 description:
+socials: 
+ - name: instagram
+   username: desir.designs
+   icon: 
+    set: 
+    name: 
 icons:
   props:
     basePath: /assets/icons/
