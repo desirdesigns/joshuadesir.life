@@ -6,16 +6,17 @@
 ::-webkit-scrollbar {
 	width: 15px;
 	background-color: #000000;
+	
+
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: rgb(1, 47, 146);
-	background-image: -webkit-linear-gradient(45deg,
-			rgba(255, 255, 255, .2) 25%,
-			transparent 25%,
-			transparent 50%,
-			rgba(255, 255, 255, .2) 50%,
-			rgba(255, 255, 255, .2) 75%,
-			transparent 75%,
-			transparent)
+    border-radius: 50px;
+
+	&:hover {
+		transition: all ease 0.5s;
+		background-color: hsl(22, 47, 146);
+
+	}
 }

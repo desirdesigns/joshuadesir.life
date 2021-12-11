@@ -1,0 +1,23 @@
+{% comment %}
+ id: footer
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+
+{% assign @socials = site.data.configs.meta.socials %}
+
+<section>
+    <h2>{{include.title }}</h2>
+
+    <ul class="icons">
+        {% for icon in @socials %}
+        <li>
+         <a href="{{ icon.link }}" 
+            class="icon {{ icon.set }} fa-{{ icon.name }}">
+           <span class="label">{{ icon.name }}</span>
+        </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

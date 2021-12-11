@@ -4,6 +4,10 @@
  version: 11.11.11
 {% endcomment %}
 
+{% assign ID = "footer" %}
+
+{% assign SOCIALS = "footer/socials.html" %}
+
 {% assign @socials = site.data.configs.meta.socials %}
 
 {% assign @footers = site.data.footers %}
@@ -14,7 +18,7 @@
  
 {% endif %}
 
-<footer id="footer" class="panel">
+<footer id="{{ ID }}" class="panel">
     <div class="inner split">
         <div>
             <section>
@@ -23,31 +27,19 @@
                 <p>{{ section.description }}</p>
             </section>
 
-            <section>
-                {% assign @socials = PARAMS.socials %}
-                <h2>{{ @socials.title }}</h2>
-                <ul class="icons">
-                    {% for icon in @socials.icons %}
-                    <li>
-                     <a href="{{ icon.link }}" 
-                        class="icon brands fa-{{ icon.name }}">
-                       <span class="label">{{ icon.name }}</span>
-                    </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </section>
+            {% include {{ SOCIALS }} title="Socials"  %}
+
 
             <p class="copyright">
                 {% assign @copyright = PARAMS %}
-                &copy; Joshua Desir</a>.
+                &copy; 2021 Joshua Desir</a>
             </p>
         </div>
 
 
         <div>
             <section>
-                <h2>Get in touch</h2>
+                <h2>Contact</h2>
                 <form method="post" action="#">
                     <div class="fields">
                         <div class="field half">
