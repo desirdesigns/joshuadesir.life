@@ -1,4 +1,14 @@
+
+{% comment %}
+  id: copyright.footer
+  type: element
+  version: 11.11.11
+{% endcomment %}
+
+{% assign @copyright = site.data.configs.meta.copyright %}
+
 <p class="copyright">
-    {% assign @copyright = PARAMS %}
-    &copy; 2021 Joshua Desir</a>
+ {% for line in @copyright %}
+  <a href="{{ line.href }}">{{ line.text }}</a>
+ {% endfor %}
 </p>

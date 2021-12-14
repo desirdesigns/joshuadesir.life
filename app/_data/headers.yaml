@@ -1,6 +1,6 @@
 default:
   logo:
-    source: /assets/images/logo.png
+    source: /assets/images/common/logo.png
   title:
     text: Joshuadesir.life
   navigation:

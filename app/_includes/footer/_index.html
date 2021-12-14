@@ -6,7 +6,9 @@
 
 {% assign ID = "footer" %}
 
-{% assign SOCIALS = "footer/socials.html" %}
+{% assign social_links = "footer/social_links.html" %}
+{% assign copyright = "footer/copyright.html" %}
+{% assign form = "form/_index.html" %}
 
 {% assign @socials = site.data.configs.meta.socials %}
 
@@ -27,37 +29,13 @@
                 <p>{{ section.description }}</p>
             </section>
 
-            {% include {{ SOCIALS }} title="Socials"  %}
+            {% include {{ social_links }} title="Platforms"  %}
 
-
-            <p class="copyright">
-                {% assign @copyright = PARAMS %}
-                &copy; 2021 Joshua Desir</a>
-            </p>
+            {% include {{ copyright }} %}
         </div>
 
-
         <div>
-            <section>
-                <h2>Contact</h2>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div class="field half">
-                            <input type="text" name="email" id="email" placeholder="Email" />
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send" class="primary" /></li>
-                        <li><input type="reset" value="Reset" /></li>
-                    </ul>
-                </form>
-            </section>
+          {% include {{ form }} title="contact me" %}
         </div>
     </div>
 </footer>

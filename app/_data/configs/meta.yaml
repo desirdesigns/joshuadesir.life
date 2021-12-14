@@ -1,12 +1,47 @@
 title: Joshuadesir.life
-copyright: 2021 - 2022 Joshua Desir
+copyright:
+  - text: "&copy; 2021 - 2022 Joshua Desir"
+    href: /
+
+  - text: Made w/ God.
+
 description:
 socials:
   - name: instagram
     username: desir.designs
+    link: https://www.instagram.com/desir.designs
     icon:
-     set: a
-     name: a
+      set: brands
+      name: instagram
+
+  - name: Behance
+    username: desir.designs
+    icon:
+      set: fab brands
+      name: behance
+
+  - name: Etsy
+    username: desir.designs
+    icon:
+      set: fab brands
+      name: etsy
+
+  - name: Ko-Fi
+    username: desir.designs
+    icon:
+      set: fas solid
+      name: coffee
+
+  - name: Pinterest
+    username: desir.designs
+    icon: 
+     set: fab brands
+     name: pinterest
+
+  - name: Facebook
+    icon:
+      set: brands
+      name: facebook
 
 icons:
   props:
