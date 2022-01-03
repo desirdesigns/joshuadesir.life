@@ -7,6 +7,14 @@ sections:
 - type: heading
   label: Configs
 - type: document
+  path: app/_data/configs/animations.yaml
+  label: Animations
+  match: "**/*"
+- type: document
+  path: app/_data/configs/theme.yaml
+  label: Theme
+  match: "**/*"
+- type: document
   path: app/_data/configs/meta.yaml
   label: Meta
 - type: heading
