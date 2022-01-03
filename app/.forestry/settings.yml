@@ -4,6 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: _data/configs/meta.yaml
+  label: Meta
+  match: "**/*"
+- type: heading
+  label: Configs
 - type: jekyll-posts
   label: Posts
   create: all
